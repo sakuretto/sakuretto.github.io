@@ -601,6 +601,7 @@ skin[615] = "background: url('source/skins/zenyatta/zenyatta_0018.png') center c
 skin[616] = "background: url('source/skins/zenyatta/zenyatta_0019.png') center center no-repeat;"
 
 function changeSkin() {
+	// change skins
 	var preview = document.getElementById('skin')
 	var icon = document.getElementById('icon')
 	var s = skin.length
