@@ -253,7 +253,6 @@ skin[264] = "background: url('source/skins/mei/mei_0017.png') center center no-r
 skin[265] = "background: url('source/skins/mei/mei_0018.png') center center no-repeat;"
 skin[266] = "background: url('source/skins/mei/mei_0019.png') center center no-repeat;"
 skin[267] = "background: url('source/skins/mei/mei_0020.png') center center no-repeat;"
-skin[268] = "background: url('source/skins/mei/mei_0021.png') center center no-repeat;"
 skin[268] = "background: url('source/skins/mercy/mercy_0001.png') center center no-repeat;"
 skin[270] = "background: url('source/skins/mercy/mercy_0002.png') center center no-repeat;"
 skin[271] = "background: url('source/skins/mercy/mercy_0003.png') center center no-repeat;"
@@ -603,9 +602,76 @@ skin[616] = "background: url('source/skins/zenyatta/zenyatta_0019.png') center c
 
 function changeSkin() {
 	var preview = document.getElementById('skin')
+	var icon = document.getElementById('icon')
 	var s = skin.length
 	var x = Math.floor(s * Math.random())
 	var r = Math.round(x)
 
-	preview.style = skin[x]
+	preview.style = skin[r]
+
+	if (r >= 0 && r <= 17) {
+		icon.style = "background: url('source/icons/new/ana.png') center center no-repeat;"
+	} else if (r >= 18 && r <= 32) {
+		icon.style = "background: url('source/icons/new/ashe.png') center center no-repeat;"
+	} else if (r >= 33 && r <= 44) {
+		icon.style = "background: url('source/icons/new/baptiste.png') center center no-repeat;"
+	} else if (r >= 45 && r <= 64) {
+		icon.style = "background: url('source/icons/new/bastion.png') center center no-repeat;"
+	} else if (r >= 65 && r <= 87) {
+		icon.style = "background: url('source/icons/new/brigitte.png') center center no-repeat;"
+	} else if (r >= 88 && r <= 106) {
+		icon.style = "background: url('source/icons/new/dva.png') center center no-repeat;"
+	} else if (r >= 107 && r <= 132) {
+		icon.style = "background: url('source/icons/new/doomfist.png') center center no-repeat;"
+	} else if (r >= 133 && r <= 144) {
+		icon.style = "background: url('source/icons/new/echo.png') center center no-repeat;"
+	} else if (r >= 145 && r <= 160) {
+		icon.style = "background: url('source/icons/new/genji.png') center center no-repeat;"
+	} else if (r >= 161 && r <= 179) {
+		icon.style = "background: url('source/icons/new/hanzo.png') center center no-repeat;"
+	} else if (r >= 181 && r <= 202) {
+		icon.style = "background: url('source/icons/new/junkrat.png') center center no-repeat;"
+	} else if (r >= 203 && r <= 223) {
+		icon.style = "background: url('source/icons/new/lucio.png') center center no-repeat;"
+	} else if (r >= 224 && r <= 246) {
+		icon.style = "background: url('source/icons/new/mccree.png') center center no-repeat;"
+	} else if (r >= 247 && r <= 267) {
+		icon.style = "background: url('source/icons/new/mei.png') center center no-repeat;"
+	} else if (r >= 268 && r <= 291) {
+		icon.style = "background: url('source/icons/new/mercy.png') center center no-repeat;"
+	} else if (r >= 292 && r <= 309) {
+		icon.style = "background: url('source/icons/new/moira.png') center center no-repeat;"
+	} else if (r >= 310 && r <= 325) {
+		icon.style = "background: url('source/icons/new/orisa.png') center center no-repeat;"
+	} else if (r >= 326 && r <= 348) {
+		icon.style = "background: url('source/icons/new/phara.png') center center no-repeat;"
+	} else if (r >= 349 && r <= 369) {
+		icon.style = "background: url('source/icons/new/reaper.png') center center no-repeat;"
+	} else if (r >= 370 && r <= 391) {
+		icon.style = "background: url('source/icons/new/reinhardt.png') center center no-repeat;"
+	} else if (r >= 392 && r <= 409) {
+		icon.style = "background: url('source/icons/new/roadhog.png') center center no-repeat;"
+	} else if (r >= 410 && r <= 423) {
+		icon.style = "background: url('source/icons/new/sigma.png') center center no-repeat;"
+	} else if (r >= 424 && r <= 444) {
+		icon.style = "background: url('source/icons/new/soldier76.png') center center no-repeat;"
+	} else if (r >= 445 && r <= 463) {
+		icon.style = "background: url('source/icons/new/sombra.png') center center no-repeat;"
+	} else if (r >= 464 && r <= 482) {
+		icon.style = "background: url('source/icons/new/symmetra.png') center center no-repeat;"
+	} else if (r >= 483 && r <= 503) {
+		icon.style = "background: url('source/icons/new/torbjörn.png') center center no-repeat;"
+	} else if (r >= 504 && r <= 524) {
+		icon.style = "background: url('source/icons/new/tracer.png') center center no-repeat;"
+	} else if (r >= 525 && r <= 546) {
+		icon.style = "background: url('source/icons/new/widowmaker.png') center center no-repeat;"
+	} else if (r >= 547 && r <= 562) {
+		icon.style = "background: url('source/icons/new/winston.png') center center no-repeat;"
+	} else if (r >= 563 && r <= 577) {
+		icon.style = "background: url('source/icons/new/wreckingball.png') center center no-repeat;"
+	} else if (r >= 578 && r <= 597) {
+		icon.style = "background: url('source/icons/new/zarya.png') center center no-repeat;"
+	} else if (r >= 598 && r <= 616) {
+		icon.style = "background: url('source/icons/new/zenyatta.png') center center no-repeat;"
+	}
 }

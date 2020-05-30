@@ -63,8 +63,19 @@ body {
 	transform: translate(-50%, -50%);
 	background-attachment: fixed;
 	background-size: contain;
-	object-fit: scale-down;
-	background: url('source/skins/symmetra/symmetra_0004.png') center center no-repeat;
+	background: url('https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg')
+		center center no-repeat;
+}
+
+#icon {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	transform: translateY(-50%);
+	width: 128px;
+	height: 128px;
+	background-size: contain;
+	z-index: 90;
 }
 
 .bot {
