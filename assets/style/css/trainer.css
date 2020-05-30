@@ -98,3 +98,7 @@ body {
 	border-color: rgb(185, 121, 0);
 	cursor: url('../cursor/e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
 }
+
+.overwatch:focus {
+	outline: none;
+}
