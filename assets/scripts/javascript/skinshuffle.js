@@ -1,92 +1,574 @@
-var skin = "background: url('source/skins/ana/ana_0001.png') center center no-repeat;,background: url('source/skins/ana/ana_0002.png') center center no-repeat;,background: url('source/skins/ana/ana_0003.png') center center no-repeat;,background: url('source/skins/ana/ana_0004.png') center center no-repeat;,background: url('source/skins/ana/ana_0006.png') center center no-repeat;,background: url('source/skins/ana/ana_0007.png') center center no-repeat;,background: url('source/skins/ana/ana_0008.png') center center no-repeat;,background: url('source/skins/ana/ana_0009.png') center center no-repeat;,background: url('source/skins/ana/ana_0010.png') center center no-repeat;,background: url('source/skins/ana/ana_0011.png') center center no-repeat;,background: url('source/skins/ana/ana_0012.png') center center no-repeat;,background: url('source/skins/ana/ana_0013.png') center center no-repeat;,background: url('source/skins/ana/ana_0014.png') center center no-repeat;,background: url('source/skins/ana/ana_0015.png') center center no-repeat;,background: url('source/skins/ana/ana_0016.png') center center no-repeat;,background: url('source/skins/ana/ana_0017.png') center center no-repeat;,background: url('source/skins/ana/ana_0018.png') center center no-repeat;,background: url('source/skins/ana/ana_0019.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0001.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0002.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0003.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0004.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0005.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0006.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0007.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0008.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0009.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0010.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0011.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0012.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0013.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0014.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0015.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0001.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0002.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0003.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0004.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0005.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0006.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0007.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0008.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0009.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0010.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0011.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0012.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0001.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0002.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0003.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0004.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0005.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0006.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0007.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0008.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0009.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0010.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0011.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0012.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0013.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0014.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0015.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0016.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0017.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0018.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0019.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0020.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0001.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0002.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0003.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0004.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0005.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0006.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0007.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0008.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0009.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0010.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0011.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0012.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0013.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0014.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0015.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0016.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0017.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0018.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0019.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0020.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0021.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0022.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0023.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0001.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0002.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0003.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0004.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0005.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0006.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0007.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0008.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0009.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0010.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0011.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0012.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0013.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0014.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0015.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0016.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0017.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0018.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0019.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0001.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0002.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0003.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0004.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0005.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0006.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0007.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0008.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0009.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0010.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0011.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0012.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0013.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0014.png') center center no-repeat;".split(",");
-skin[130] = "background: url('source/skins/doomfist/doomfist_0015.png') center center no-repeat;"; skin[131] = "background: url('source/skins/doomfist/doomfist_0016.png') center center no-repeat;"; skin[132] = "background: url('source/skins/doomfist/doomfist_0017.png') center center no-repeat;"; skin[133] = "background: url('source/skins/echo/echo_0001.png') center center no-repeat;"; skin[135] = "background: url('source/skins/echo/echo_0002.png') center center no-repeat;"; skin[136] = "background: url('source/skins/echo/echo_0003.png') center center no-repeat;";
-skin[137] = "background: url('source/skins/echo/echo_0004.png') center center no-repeat;"; skin[138] = "background: url('source/skins/echo/echo_0005.png') center center no-repeat;"; skin[139] = "background: url('source/skins/echo/echo_0006.png') center center no-repeat;"; skin[140] = "background: url('source/skins/echo/echo_0007.png') center center no-repeat;"; skin[141] = "background: url('source/skins/echo/echo_0008.png') center center no-repeat;"; skin[142] = "background: url('source/skins/echo/echo_0009.png') center center no-repeat;";
-skin[143] = "background: url('source/skins/echo/echo_0010.png') center center no-repeat;"; skin[144] = "background: url('source/skins/echo/echo_0011.png') center center no-repeat;"; skin[145] = "background: url('source/skins/genji/genji_0001.png') center center no-repeat;"; skin[146] = "background: url('source/skins/genji/genji_0002.png') center center no-repeat;"; skin[147] = "background: url('source/skins/genji/genji_0003.png') center center no-repeat;"; skin[148] = "background: url('source/skins/genji/genji_0004.png') center center no-repeat;";
-skin[149] = "background: url('source/skins/genji/genji_0005.png') center center no-repeat;"; skin[150] = "background: url('source/skins/genji/genji_0006.png') center center no-repeat;"; skin[151] = "background: url('source/skins/genji/genji_0007.png') center center no-repeat;"; skin[152] = "background: url('source/skins/genji/genji_0008.png') center center no-repeat;"; skin[153] = "background: url('source/skins/genji/genji_0009.png') center center no-repeat;"; skin[154] = "background: url('source/skins/genji/genji_0010.png') center center no-repeat;";
-skin[155] = "background: url('source/skins/genji/genji_0011.png') center center no-repeat;"; skin[156] = "background: url('source/skins/genji/genji_0012.png') center center no-repeat;"; skin[157] = "background: url('source/skins/genji/genji_0013.png') center center no-repeat;"; skin[158] = "background: url('source/skins/genji/genji_0014.png') center center no-repeat;"; skin[159] = "background: url('source/skins/genji/genji_0015.png') center center no-repeat;"; skin[160] = "background: url('source/skins/genji/genji_0016.png') center center no-repeat;";
-skin[161] = "background: url('source/skins/hanzo/hanzo_0001.png') center center no-repeat;"; skin[162] = "background: url('source/skins/hanzo/hanzo_0002.png') center center no-repeat;"; skin[163] = "background: url('source/skins/hanzo/hanzo_0003.png') center center no-repeat;"; skin[164] = "background: url('source/skins/hanzo/hanzo_0004.png') center center no-repeat;"; skin[165] = "background: url('source/skins/hanzo/hanzo_0005.png') center center no-repeat;"; skin[167] = "background: url('source/skins/hanzo/hanzo_0006.png') center center no-repeat;";
-skin[168] = "background: url('source/skins/hanzo/hanzo_0007.png') center center no-repeat;"; skin[169] = "background: url('source/skins/hanzo/hanzo_0008.png') center center no-repeat;"; skin[170] = "background: url('source/skins/hanzo/hanzo_0009.png') center center no-repeat;"; skin[171] = "background: url('source/skins/hanzo/hanzo_0010.png') center center no-repeat;"; skin[172] = "background: url('source/skins/hanzo/hanzo_0011.png') center center no-repeat;"; skin[173] = "background: url('source/skins/hanzo/hanzo_0012.png') center center no-repeat;";
-skin[174] = "background: url('source/skins/hanzo/hanzo_0013.png') center center no-repeat;"; skin[175] = "background: url('source/skins/hanzo/hanzo_0014.png') center center no-repeat;"; skin[176] = "background: url('source/skins/hanzo/hanzo_0015.png') center center no-repeat;"; skin[177] = "background: url('source/skins/hanzo/hanzo_0016.png') center center no-repeat;"; skin[178] = "background: url('source/skins/hanzo/hanzo_0017.png') center center no-repeat;"; skin[179] = "background: url('source/skins/hanzo/hanzo_0018.png') center center no-repeat;";
-skin[181] = "background: url('source/skins/junkrat/junkrat_0001.png') center center no-repeat;"; skin[182] = "background: url('source/skins/junkrat/junkrat_0002.png') center center no-repeat;"; skin[183] = "background: url('source/skins/junkrat/junkrat_0003.png') center center no-repeat;"; skin[184] = "background: url('source/skins/junkrat/junkrat_0004.png') center center no-repeat;"; skin[185] = "background: url('source/skins/junkrat/junkrat_0005.png') center center no-repeat;"; skin[186] = "background: url('source/skins/junkrat/junkrat_0006.png') center center no-repeat;";
-skin[187] = "background: url('source/skins/junkrat/junkrat_0007.png') center center no-repeat;"; skin[188] = "background: url('source/skins/junkrat/junkrat_0008.png') center center no-repeat;"; skin[189] = "background: url('source/skins/junkrat/junkrat_0009.png') center center no-repeat;"; skin[191] = "background: url('source/skins/junkrat/junkrat_0010.png') center center no-repeat;"; skin[192] = "background: url('source/skins/junkrat/junkrat_0011.png') center center no-repeat;"; skin[193] = "background: url('source/skins/junkrat/junkrat_0012.png') center center no-repeat;";
-skin[194] = "background: url('source/skins/junkrat/junkrat_0013.png') center center no-repeat;"; skin[195] = "background: url('source/skins/junkrat/junkrat_0014.png') center center no-repeat;"; skin[196] = "background: url('source/skins/junkrat/junkrat_0015.png') center center no-repeat;"; skin[197] = "background: url('source/skins/junkrat/junkrat_0016.png') center center no-repeat;"; skin[198] = "background: url('source/skins/junkrat/junkrat_0017.png') center center no-repeat;"; skin[199] = "background: url('source/skins/junkrat/junkrat_0018.png') center center no-repeat;";
-skin[200] = "background: url('source/skins/junkrat/junkrat_0019.png') center center no-repeat;"; skin[201] = "background: url('source/skins/junkrat/junkrat_0020.png') center center no-repeat;"; skin[202] = "background: url('source/skins/junkrat/junkrat_0021.png') center center no-repeat;"; skin[203] = "background: url('source/skins/lucio/lucio_0001.png') center center no-repeat;"; skin[204] = "background: url('source/skins/lucio/lucio_0002.png') center center no-repeat;"; skin[205] = "background: url('source/skins/lucio/lucio_0003.png') center center no-repeat;";
-skin[206] = "background: url('source/skins/lucio/lucio_0004.png') center center no-repeat;"; skin[207] = "background: url('source/skins/lucio/lucio_0005.png') center center no-repeat;"; skin[208] = "background: url('source/skins/lucio/lucio_0006.png') center center no-repeat;"; skin[219] = "background: url('source/skins/lucio/lucio_0007.png') center center no-repeat;"; skin[210] = "background: url('source/skins/lucio/lucio_0008.png') center center no-repeat;"; skin[211] = "background: url('source/skins/lucio/lucio_0009.png') center center no-repeat;";
-skin[212] = "background: url('source/skins/lucio/lucio_0010.png') center center no-repeat;"; skin[213] = "background: url('source/skins/lucio/lucio_0011.png') center center no-repeat;"; skin[214] = "background: url('source/skins/lucio/lucio_0012.png') center center no-repeat;"; skin[215] = "background: url('source/skins/lucio/lucio_0013.png') center center no-repeat;"; skin[216] = "background: url('source/skins/lucio/lucio_0014.png') center center no-repeat;"; skin[217] = "background: url('source/skins/lucio/lucio_0015.png') center center no-repeat;";
-skin[218] = "background: url('source/skins/lucio/lucio_0016.png') center center no-repeat;"; skin[219] = "background: url('source/skins/lucio/lucio_0017.png') center center no-repeat;"; skin[220] = "background: url('source/skins/lucio/lucio_0018.png') center center no-repeat;"; skin[221] = "background: url('source/skins/lucio/lucio_0019.png') center center no-repeat;"; skin[222] = "background: url('source/skins/lucio/lucio_0020.png') center center no-repeat;"; skin[223] = "background: url('source/skins/lucio/lucio_0021.png') center center no-repeat;";
-skin[224] = "background: url('source/skins/mccree/mccree_0001.png') center center no-repeat;"; skin[225] = "background: url('source/skins/mccree/mccree_0002.png') center center no-repeat;"; skin[226] = "background: url('source/skins/mccree/mccree_0003.png') center center no-repeat;"; skin[227] = "background: url('source/skins/mccree/mccree_0004.png') center center no-repeat;"; skin[228] = "background: url('source/skins/mccree/mccree_0005.png') center center no-repeat;"; skin[229] = "background: url('source/skins/mccree/mccree_0006.png') center center no-repeat;";
-skin[230] = "background: url('source/skins/mccree/mccree_0007.png') center center no-repeat;"; skin[231] = "background: url('source/skins/mccree/mccree_0008.png') center center no-repeat;"; skin[232] = "background: url('source/skins/mccree/mccree_0009.png') center center no-repeat;"; skin[233] = "background: url('source/skins/mccree/mccree_0010.png') center center no-repeat;"; skin[234] = "background: url('source/skins/mccree/mccree_0011.png') center center no-repeat;"; skin[235] = "background: url('source/skins/mccree/mccree_0012.png') center center no-repeat;";
-skin[236] = "background: url('source/skins/mccree/mccree_0013.png') center center no-repeat;"; skin[237] = "background: url('source/skins/mccree/mccree_0014.png') center center no-repeat;"; skin[238] = "background: url('source/skins/mccree/mccree_0015.png') center center no-repeat;"; skin[239] = "background: url('source/skins/mccree/mccree_0016.png') center center no-repeat;"; skin[240] = "background: url('source/skins/mccree/mccree_0017.png') center center no-repeat;"; skin[241] = "background: url('source/skins/mccree/mccree_0018.png') center center no-repeat;";
-skin[242] = "background: url('source/skins/mccree/mccree_0019.png') center center no-repeat;"; skin[243] = "background: url('source/skins/mccree/mccree_0020.png') center center no-repeat;"; skin[244] = "background: url('source/skins/mccree/mccree_0021.png') center center no-repeat;"; skin[245] = "background: url('source/skins/mccree/mccree_0022.png') center center no-repeat;"; skin[246] = "background: url('source/skins/mccree/mccree_0023.png') center center no-repeat;"; skin[247] = "background: url('source/skins/mei/mei_0001.png') center center no-repeat;";
-skin[248] = "background: url('source/skins/mei/mei_0002.png') center center no-repeat;"; skin[249] = "background: url('source/skins/mei/mei_0003.png') center center no-repeat;"; skin[251] = "background: url('source/skins/mei/mei_0004.png') center center no-repeat;"; skin[252] = "background: url('source/skins/mei/mei_0005.png') center center no-repeat;"; skin[253] = "background: url('source/skins/mei/mei_0006.png') center center no-repeat;"; skin[254] = "background: url('source/skins/mei/mei_0007.png') center center no-repeat;";
-skin[255] = "background: url('source/skins/mei/mei_0008.png') center center no-repeat;"; skin[256] = "background: url('source/skins/mei/mei_0009.png') center center no-repeat;"; skin[257] = "background: url('source/skins/mei/mei_0010.png') center center no-repeat;"; skin[258] = "background: url('source/skins/mei/mei_0011.png') center center no-repeat;"; skin[259] = "background: url('source/skins/mei/mei_0012.png') center center no-repeat;"; skin[260] = "background: url('source/skins/mei/mei_0013.png') center center no-repeat;";
-skin[261] = "background: url('source/skins/mei/mei_0014.png') center center no-repeat;"; skin[262] = "background: url('source/skins/mei/mei_0015.png') center center no-repeat;"; skin[263] = "background: url('source/skins/mei/mei_0016.png') center center no-repeat;"; skin[264] = "background: url('source/skins/mei/mei_0017.png') center center no-repeat;"; skin[265] = "background: url('source/skins/mei/mei_0018.png') center center no-repeat;"; skin[266] = "background: url('source/skins/mei/mei_0019.png') center center no-repeat;";
-skin[267] = "background: url('source/skins/mei/mei_0020.png') center center no-repeat;"; skin[268] = "background: url('source/skins/mercy/mercy_0001.png') center center no-repeat;"; skin[270] = "background: url('source/skins/mercy/mercy_0002.png') center center no-repeat;"; skin[271] = "background: url('source/skins/mercy/mercy_0003.png') center center no-repeat;"; skin[272] = "background: url('source/skins/mercy/mercy_0004.png') center center no-repeat;"; skin[273] = "background: url('source/skins/mercy/mercy_0005.png') center center no-repeat;";
-skin[274] = "background: url('source/skins/mercy/mercy_0006.png') center center no-repeat;"; skin[275] = "background: url('source/skins/mercy/mercy_0007.png') center center no-repeat;"; skin[276] = "background: url('source/skins/mercy/mercy_0008.png') center center no-repeat;"; skin[277] = "background: url('source/skins/mercy/mercy_0009.png') center center no-repeat;"; skin[278] = "background: url('source/skins/mercy/mercy_0010.png') center center no-repeat;"; skin[279] = "background: url('source/skins/mercy/mercy_0011.png') center center no-repeat;";
-skin[280] = "background: url('source/skins/mercy/mercy_0012.png') center center no-repeat;"; skin[281] = "background: url('source/skins/mercy/mercy_0013.png') center center no-repeat;"; skin[282] = "background: url('source/skins/mercy/mercy_0014.png') center center no-repeat;"; skin[283] = "background: url('source/skins/mercy/mercy_0015.png') center center no-repeat;"; skin[284] = "background: url('source/skins/mercy/mercy_0016.png') center center no-repeat;"; skin[285] = "background: url('source/skins/mercy/mercy_0017.png') center center no-repeat;";
-skin[286] = "background: url('source/skins/mercy/mercy_0018.png') center center no-repeat;"; skin[287] = "background: url('source/skins/mercy/mercy_0019.png') center center no-repeat;"; skin[288] = "background: url('source/skins/mercy/mercy_0020.png') center center no-repeat;"; skin[289] = "background: url('source/skins/mercy/mercy_0021.png') center center no-repeat;"; skin[290] = "background: url('source/skins/mercy/mercy_0022.png') center center no-repeat;"; skin[291] = "background: url('source/skins/mercy/mercy_0023.png') center center no-repeat;";
-skin[292] = "background: url('source/skins/moira/moira_0001.png') center center no-repeat;"; skin[293] = "background: url('source/skins/moira/moira_0002.png') center center no-repeat;"; skin[294] = "background: url('source/skins/moira/moira_0003.png') center center no-repeat;"; skin[295] = "background: url('source/skins/moira/moira_0004.png') center center no-repeat;"; skin[296] = "background: url('source/skins/moira/moira_0005.png') center center no-repeat;"; skin[297] = "background: url('source/skins/moira/moira_0006.png') center center no-repeat;";
-skin[298] = "background: url('source/skins/moira/moira_0007.png') center center no-repeat;"; skin[299] = "background: url('source/skins/moira/moira_0008.png') center center no-repeat;"; skin[300] = "background: url('source/skins/moira/moira_0009.png') center center no-repeat;"; skin[301] = "background: url('source/skins/moira/moira_0010.png') center center no-repeat;"; skin[302] = "background: url('source/skins/moira/moira_0011.png') center center no-repeat;"; skin[303] = "background: url('source/skins/moira/moira_0012.png') center center no-repeat;";
-skin[304] = "background: url('source/skins/moira/moira_0013.png') center center no-repeat;"; skin[305] = "background: url('source/skins/moira/moira_0014.png') center center no-repeat;"; skin[306] = "background: url('source/skins/moira/moira_0015.png') center center no-repeat;"; skin[307] = "background: url('source/skins/moira/moira_0016.png') center center no-repeat;"; skin[308] = "background: url('source/skins/moira/moira_0017.png') center center no-repeat;"; skin[309] = "background: url('source/skins/moira/moira_0018.png') center center no-repeat;";
-skin[310] = "background: url('source/skins/orisa/orisa_0001.png') center center no-repeat;"; skin[311] = "background: url('source/skins/orisa/orisa_0002.png') center center no-repeat;"; skin[312] = "background: url('source/skins/orisa/orisa_0003.png') center center no-repeat;"; skin[313] = "background: url('source/skins/orisa/orisa_0004.png') center center no-repeat;"; skin[314] = "background: url('source/skins/orisa/orisa_0005.png') center center no-repeat;"; skin[315] = "background: url('source/skins/orisa/orisa_0006.png') center center no-repeat;";
-skin[316] = "background: url('source/skins/orisa/orisa_0007.png') center center no-repeat;"; skin[317] = "background: url('source/skins/orisa/orisa_0008.png') center center no-repeat;"; skin[318] = "background: url('source/skins/orisa/orisa_0009.png') center center no-repeat;"; skin[319] = "background: url('source/skins/orisa/orisa_0010.png') center center no-repeat;"; skin[320] = "background: url('source/skins/orisa/orisa_0011.png') center center no-repeat;"; skin[321] = "background: url('source/skins/orisa/orisa_0012.png') center center no-repeat;";
-skin[322] = "background: url('source/skins/orisa/orisa_0013.png') center center no-repeat;"; skin[323] = "background: url('source/skins/orisa/orisa_0014.png') center center no-repeat;"; skin[324] = "background: url('source/skins/orisa/orisa_0015.png') center center no-repeat;"; skin[325] = "background: url('source/skins/orisa/orisa_0016.png') center center no-repeat;"; skin[326] = "background: url('source/skins/phara/phara_0001.png') center center no-repeat;"; skin[327] = "background: url('source/skins/phara/phara_0002.png') center center no-repeat;";
-skin[328] = "background: url('source/skins/phara/phara_0003.png') center center no-repeat;"; skin[329] = "background: url('source/skins/phara/phara_0004.png') center center no-repeat;"; skin[330] = "background: url('source/skins/phara/phara_0005.png') center center no-repeat;"; skin[331] = "background: url('source/skins/phara/phara_0006.png') center center no-repeat;"; skin[332] = "background: url('source/skins/phara/phara_0007.png') center center no-repeat;"; skin[333] = "background: url('source/skins/phara/phara_0008.png') center center no-repeat;";
-skin[334] = "background: url('source/skins/phara/phara_0009.png') center center no-repeat;"; skin[335] = "background: url('source/skins/phara/phara_0010.png') center center no-repeat;"; skin[336] = "background: url('source/skins/phara/phara_0011.png') center center no-repeat;"; skin[337] = "background: url('source/skins/phara/phara_0012.png') center center no-repeat;"; skin[338] = "background: url('source/skins/phara/phara_0013.png') center center no-repeat;"; skin[339] = "background: url('source/skins/phara/phara_0014.png') center center no-repeat;";
-skin[340] = "background: url('source/skins/phara/phara_0015.png') center center no-repeat;"; skin[341] = "background: url('source/skins/phara/phara_0016.png') center center no-repeat;"; skin[342] = "background: url('source/skins/phara/phara_0017.png') center center no-repeat;"; skin[343] = "background: url('source/skins/phara/phara_0018.png') center center no-repeat;"; skin[344] = "background: url('source/skins/phara/phara_0019.png') center center no-repeat;"; skin[345] = "background: url('source/skins/phara/phara_0020.png') center center no-repeat;";
-skin[346] = "background: url('source/skins/phara/phara_0021.png') center center no-repeat;"; skin[347] = "background: url('source/skins/phara/phara_0022.png') center center no-repeat;"; skin[348] = "background: url('source/skins/phara/phara_0023.png') center center no-repeat;"; skin[349] = "background: url('source/skins/reaper/reaper_0001.png') center center no-repeat;"; skin[350] = "background: url('source/skins/reaper/reaper_0002.png') center center no-repeat;"; skin[351] = "background: url('source/skins/reaper/reaper_0003.png') center center no-repeat;";
-skin[352] = "background: url('source/skins/reaper/reaper_0004.png') center center no-repeat;"; skin[353] = "background: url('source/skins/reaper/reaper_0005.png') center center no-repeat;"; skin[354] = "background: url('source/skins/reaper/reaper_0006.png') center center no-repeat;"; skin[355] = "background: url('source/skins/reaper/reaper_0007.png') center center no-repeat;"; skin[356] = "background: url('source/skins/reaper/reaper_0008.png') center center no-repeat;"; skin[357] = "background: url('source/skins/reaper/reaper_0009.png') center center no-repeat;";
-skin[358] = "background: url('source/skins/reaper/reaper_0010.png') center center no-repeat;"; skin[359] = "background: url('source/skins/reaper/reaper_0011.png') center center no-repeat;"; skin[360] = "background: url('source/skins/reaper/reaper_0012.png') center center no-repeat;"; skin[361] = "background: url('source/skins/reaper/reaper_0013.png') center center no-repeat;"; skin[362] = "background: url('source/skins/reaper/reaper_0014.png') center center no-repeat;"; skin[363] = "background: url('source/skins/reaper/reaper_0015.png') center center no-repeat;";
-skin[364] = "background: url('source/skins/reaper/reaper_0016.png') center center no-repeat;"; skin[365] = "background: url('source/skins/reaper/reaper_0017.png') center center no-repeat;"; skin[366] = "background: url('source/skins/reaper/reaper_0018.png') center center no-repeat;"; skin[367] = "background: url('source/skins/reaper/reaper_0019.png') center center no-repeat;"; skin[368] = "background: url('source/skins/reaper/reaper_0020.png') center center no-repeat;"; skin[369] = "background: url('source/skins/reaper/reaper_0021.png') center center no-repeat;";
-skin[370] = "background: url('source/skins/reinhardt/reinhardt_0001.png') center center no-repeat;"; skin[371] = "background: url('source/skins/reinhardt/reinhardt_0002.png') center center no-repeat;"; skin[372] = "background: url('source/skins/reinhardt/reinhardt_0003.png') center center no-repeat;"; skin[373] = "background: url('source/skins/reinhardt/reinhardt_0004.png') center center no-repeat;"; skin[374] = "background: url('source/skins/reinhardt/reinhardt_0005.png') center center no-repeat;"; skin[375] = "background: url('source/skins/reinhardt/reinhardt_0006.png') center center no-repeat;";
-skin[376] = "background: url('source/skins/reinhardt/reinhardt_0007.png') center center no-repeat;"; skin[377] = "background: url('source/skins/reinhardt/reinhardt_0008.png') center center no-repeat;"; skin[379] = "background: url('source/skins/reinhardt/reinhardt_0009.png') center center no-repeat;"; skin[380] = "background: url('source/skins/reinhardt/reinhardt_0010.png') center center no-repeat;"; skin[381] = "background: url('source/skins/reinhardt/reinhardt_0011.png') center center no-repeat;"; skin[382] = "background: url('source/skins/reinhardt/reinhardt_0012.png') center center no-repeat;";
-skin[383] = "background: url('source/skins/reinhardt/reinhardt_0013.png') center center no-repeat;"; skin[384] = "background: url('source/skins/reinhardt/reinhardt_0014.png') center center no-repeat;"; skin[385] = "background: url('source/skins/reinhardt/reinhardt_0015.png') center center no-repeat;"; skin[386] = "background: url('source/skins/reinhardt/reinhardt_0016.png') center center no-repeat;"; skin[387] = "background: url('source/skins/reinhardt/reinhardt_0017.png') center center no-repeat;"; skin[388] = "background: url('source/skins/reinhardt/reinhardt_0018.png') center center no-repeat;";
-skin[389] = "background: url('source/skins/reinhardt/reinhardt_0019.png') center center no-repeat;"; skin[391] = "background: url('source/skins/reinhardt/reinhardt_0020.png') center center no-repeat;"; skin[392] = "background: url('source/skins/roadhog/roadhog_0001.png') center center no-repeat;"; skin[393] = "background: url('source/skins/roadhog/roadhog_0002.png') center center no-repeat;"; skin[394] = "background: url('source/skins/roadhog/roadhog_0003.png') center center no-repeat;"; skin[395] = "background: url('source/skins/roadhog/roadhog_0004.png') center center no-repeat;";
-skin[396] = "background: url('source/skins/roadhog/roadhog_0005.png') center center no-repeat;"; skin[397] = "background: url('source/skins/roadhog/roadhog_0006.png') center center no-repeat;"; skin[398] = "background: url('source/skins/roadhog/roadhog_0007.png') center center no-repeat;"; skin[399] = "background: url('source/skins/roadhog/roadhog_0008.png') center center no-repeat;"; skin[400] = "background: url('source/skins/roadhog/roadhog_0009.png') center center no-repeat;"; skin[401] = "background: url('source/skins/roadhog/roadhog_0010.png') center center no-repeat;";
-skin[402] = "background: url('source/skins/roadhog/roadhog_0011.png') center center no-repeat;"; skin[403] = "background: url('source/skins/roadhog/roadhog_0012.png') center center no-repeat;"; skin[404] = "background: url('source/skins/roadhog/roadhog_0013.png') center center no-repeat;"; skin[402] = "background: url('source/skins/roadhog/roadhog_0014.png') center center no-repeat;"; skin[406] = "background: url('source/skins/roadhog/roadhog_0015.png') center center no-repeat;"; skin[407] = "background: url('source/skins/roadhog/roadhog_0016.png') center center no-repeat;";
-skin[408] = "background: url('source/skins/roadhog/roadhog_0017.png') center center no-repeat;"; skin[409] = "background: url('source/skins/roadhog/roadhog_0018.png') center center no-repeat;"; skin[410] = "background: url('source/skins/sigma/sigma_0001.png') center center no-repeat;"; skin[411] = "background: url('source/skins/sigma/sigma_0002.png') center center no-repeat;"; skin[412] = "background: url('source/skins/sigma/sigma_0003.png') center center no-repeat;"; skin[413] = "background: url('source/skins/sigma/sigma_0004.png') center center no-repeat;";
-skin[414] = "background: url('source/skins/sigma/sigma_0005.png') center center no-repeat;"; skin[415] = "background: url('source/skins/sigma/sigma_0006.png') center center no-repeat;"; skin[416] = "background: url('source/skins/sigma/sigma_0007.png') center center no-repeat;"; skin[417] = "background: url('source/skins/sigma/sigma_0008.png') center center no-repeat;"; skin[418] = "background: url('source/skins/sigma/sigma_0009.png') center center no-repeat;"; skin[419] = "background: url('source/skins/sigma/sigma_0010.png') center center no-repeat;";
-skin[420] = "background: url('source/skins/sigma/sigma_0011.png') center center no-repeat;"; skin[421] = "background: url('source/skins/sigma/sigma_0012.png') center center no-repeat;"; skin[422] = "background: url('source/skins/sigma/sigma_0013.png') center center no-repeat;"; skin[423] = "background: url('source/skins/sigma/sigma_0014.png') center center no-repeat;"; skin[424] = "background: url('source/skins/soldier76/soldier76_0001.png') center center no-repeat;"; skin[425] = "background: url('source/skins/soldier76/soldier76_0002.png') center center no-repeat;";
-skin[426] = "background: url('source/skins/soldier76/soldier76_0003.png') center center no-repeat;"; skin[427] = "background: url('source/skins/soldier76/soldier76_0004.png') center center no-repeat;"; skin[428] = "background: url('source/skins/soldier76/soldier76_0005.png') center center no-repeat;"; skin[429] = "background: url('source/skins/soldier76/soldier76_0006.png') center center no-repeat;"; skin[430] = "background: url('source/skins/soldier76/soldier76_0007.png') center center no-repeat;"; skin[431] = "background: url('source/skins/soldier76/soldier76_0008.png') center center no-repeat;";
-skin[432] = "background: url('source/skins/soldier76/soldier76_0009.png') center center no-repeat;"; skin[433] = "background: url('source/skins/soldier76/soldier76_0010.png') center center no-repeat;"; skin[434] = "background: url('source/skins/soldier76/soldier76_0011.png') center center no-repeat;"; skin[435] = "background: url('source/skins/soldier76/soldier76_0012.png') center center no-repeat;"; skin[436] = "background: url('source/skins/soldier76/soldier76_0013.png') center center no-repeat;"; skin[437] = "background: url('source/skins/soldier76/soldier76_0014.png') center center no-repeat;";
-skin[438] = "background: url('source/skins/soldier76/soldier76_0015.png') center center no-repeat;"; skin[439] = "background: url('source/skins/soldier76/soldier76_0016.png') center center no-repeat;"; skin[440] = "background: url('source/skins/soldier76/soldier76_0017.png') center center no-repeat;"; skin[441] = "background: url('source/skins/soldier76/soldier76_0018.png') center center no-repeat;"; skin[442] = "background: url('source/skins/soldier76/soldier76_0019.png') center center no-repeat;"; skin[443] = "background: url('source/skins/soldier76/soldier76_0020.png') center center no-repeat;";
-skin[444] = "background: url('source/skins/soldier76/soldier76_0021.png') center center no-repeat;"; skin[445] = "background: url('source/skins/sombra/sombra_0002.png') center center no-repeat;"; skin[446] = "background: url('source/skins/sombra/sombra_0003.png') center center no-repeat;"; skin[447] = "background: url('source/skins/sombra/sombra_0004.png') center center no-repeat;"; skin[448] = "background: url('source/skins/sombra/sombra_0005.png') center center no-repeat;"; skin[449] = "background: url('source/skins/sombra/sombra_0006.png') center center no-repeat;";
-skin[450] = "background: url('source/skins/sombra/sombra_0007.png') center center no-repeat;"; skin[451] = "background: url('source/skins/sombra/sombra_0008.png') center center no-repeat;"; skin[452] = "background: url('source/skins/sombra/sombra_0009.png') center center no-repeat;"; skin[453] = "background: url('source/skins/sombra/sombra_0010.png') center center no-repeat;"; skin[454] = "background: url('source/skins/sombra/sombra_0011.png') center center no-repeat;"; skin[455] = "background: url('source/skins/sombra/sombra_0012.png') center center no-repeat;";
-skin[456] = "background: url('source/skins/sombra/sombra_0013.png') center center no-repeat;"; skin[457] = "background: url('source/skins/sombra/sombra_0014.png') center center no-repeat;"; skin[458] = "background: url('source/skins/sombra/sombra_0015.png') center center no-repeat;"; skin[459] = "background: url('source/skins/sombra/sombra_0016.png') center center no-repeat;"; skin[460] = "background: url('source/skins/sombra/sombra_0017.png') center center no-repeat;"; skin[461] = "background: url('source/skins/sombra/sombra_0018.png') center center no-repeat;";
-skin[462] = "background: url('source/skins/sombra/sombra_0019.png') center center no-repeat;"; skin[463] = "background: url('source/skins/sombra/sombra_0020.png') center center no-repeat;"; skin[464] = "background: url('source/skins/symmetra/symmetra_0001.png') center center no-repeat;"; skin[465] = "background: url('source/skins/symmetra/symmetra_0002.png') center center no-repeat;"; skin[466] = "background: url('source/skins/symmetra/symmetra_0003.png') center center no-repeat;"; skin[467] = "background: url('source/skins/symmetra/symmetra_0004.png') center center no-repeat;";
-skin[468] = "background: url('source/skins/symmetra/symmetra_0005.png') center center no-repeat;"; skin[469] = "background: url('source/skins/symmetra/symmetra_0006.png') center center no-repeat;"; skin[470] = "background: url('source/skins/symmetra/symmetra_0007.png') center center no-repeat;"; skin[471] = "background: url('source/skins/symmetra/symmetra_0008.png') center center no-repeat;"; skin[472] = "background: url('source/skins/symmetra/symmetra_0009.png') center center no-repeat;"; skin[473] = "background: url('source/skins/symmetra/symmetra_0010.png') center center no-repeat;";
-skin[474] = "background: url('source/skins/symmetra/symmetra_0011.png') center center no-repeat;"; skin[475] = "background: url('source/skins/symmetra/symmetra_0012.png') center center no-repeat;"; skin[476] = "background: url('source/skins/symmetra/symmetra_0013.png') center center no-repeat;"; skin[477] = "background: url('source/skins/symmetra/symmetra_0014.png') center center no-repeat;"; skin[478] = "background: url('source/skins/symmetra/symmetra_0015.png') center center no-repeat;"; skin[479] = "background: url('source/skins/symmetra/symmetra_0016.png') center center no-repeat;";
-skin[480] = "background: url('source/skins/symmetra/symmetra_0017.png') center center no-repeat;"; skin[481] = "background: url('source/skins/symmetra/symmetra_0018.png') center center no-repeat;"; skin[482] = "background: url('source/skins/symmetra/symmetra_0019.png') center center no-repeat;"; skin[483] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0001.png') center center no-repeat;"; skin[484] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0002.png') center center no-repeat;";
-skin[485] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0003.png') center center no-repeat;"; skin[486] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0004.png') center center no-repeat;"; skin[487] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0005.png') center center no-repeat;"; skin[488] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0006.png') center center no-repeat;"; skin[489] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0007.png') center center no-repeat;";
-skin[490] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0008.png') center center no-repeat;"; skin[491] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0009.png') center center no-repeat;"; skin[492] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0010.png') center center no-repeat;"; skin[493] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0011.png') center center no-repeat;"; skin[494] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0012.png') center center no-repeat;";
-skin[495] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0013.png') center center no-repeat;"; skin[496] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0014.png') center center no-repeat;"; skin[497] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0015.png') center center no-repeat;"; skin[498] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0016.png') center center no-repeat;"; skin[499] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0017.png') center center no-repeat;";
-skin[500] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0018.png') center center no-repeat;"; skin[501] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0019.png') center center no-repeat;"; skin[502] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0020.png') center center no-repeat;"; skin[503] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0021.png') center center no-repeat;"; skin[504] = "background: url('source/skins/tracer/tracer_0001.png') center center no-repeat;";
-skin[505] = "background: url('source/skins/tracer/tracer_0002.png') center center no-repeat;"; skin[506] = "background: url('source/skins/tracer/tracer_0003.png') center center no-repeat;"; skin[507] = "background: url('source/skins/tracer/tracer_0004.png') center center no-repeat;"; skin[508] = "background: url('source/skins/tracer/tracer_0005.png') center center no-repeat;"; skin[509] = "background: url('source/skins/tracer/tracer_0006.png') center center no-repeat;"; skin[510] = "background: url('source/skins/tracer/tracer_0007.png') center center no-repeat;";
-skin[511] = "background: url('source/skins/tracer/tracer_0008.png') center center no-repeat;"; skin[512] = "background: url('source/skins/tracer/tracer_0009.png') center center no-repeat;"; skin[513] = "background: url('source/skins/tracer/tracer_0010.png') center center no-repeat;"; skin[514] = "background: url('source/skins/tracer/tracer_0011.png') center center no-repeat;"; skin[515] = "background: url('source/skins/tracer/tracer_0012.png') center center no-repeat;"; skin[516] = "background: url('source/skins/tracer/tracer_0013.png') center center no-repeat;";
-skin[517] = "background: url('source/skins/tracer/tracer_0014.png') center center no-repeat;"; skin[518] = "background: url('source/skins/tracer/tracer_0015.png') center center no-repeat;"; skin[519] = "background: url('source/skins/tracer/tracer_0016.png') center center no-repeat;"; skin[520] = "background: url('source/skins/tracer/tracer_0017.png') center center no-repeat;"; skin[521] = "background: url('source/skins/tracer/tracer_0018.png') center center no-repeat;"; skin[522] = "background: url('source/skins/tracer/tracer_0019.png') center center no-repeat;";
-skin[523] = "background: url('source/skins/tracer/tracer_0020.png') center center no-repeat;"; skin[524] = "background: url('source/skins/tracer/tracer_0021.png') center center no-repeat;"; skin[525] = "background: url('source/skins/widowmaker/widowmaker_0001.png') center center no-repeat;"; skin[526] = "background: url('source/skins/widowmaker/widowmaker_0002.png') center center no-repeat;"; skin[527] = "background: url('source/skins/widowmaker/widowmaker_0003.png') center center no-repeat;"; skin[528] = "background: url('source/skins/widowmaker/widowmaker_0004.png') center center no-repeat;";
-skin[529] = "background: url('source/skins/widowmaker/widowmaker_0005.png') center center no-repeat;"; skin[530] = "background: url('source/skins/widowmaker/widowmaker_0006.png') center center no-repeat;"; skin[531] = "background: url('source/skins/widowmaker/widowmaker_0007.png') center center no-repeat;"; skin[532] = "background: url('source/skins/widowmaker/widowmaker_0008.png') center center no-repeat;"; skin[533] = "background: url('source/skins/widowmaker/widowmaker_0009.png') center center no-repeat;";
-skin[534] = "background: url('source/skins/widowmaker/widowmaker_0010.png') center center no-repeat;"; skin[535] = "background: url('source/skins/widowmaker/widowmaker_0011.png') center center no-repeat;"; skin[536] = "background: url('source/skins/widowmaker/widowmaker_0012.png') center center no-repeat;"; skin[537] = "background: url('source/skins/widowmaker/widowmaker_0013.png') center center no-repeat;"; skin[538] = "background: url('source/skins/widowmaker/widowmaker_0014.png') center center no-repeat;";
-skin[539] = "background: url('source/skins/widowmaker/widowmaker_0015.png') center center no-repeat;"; skin[540] = "background: url('source/skins/widowmaker/widowmaker_0016.png') center center no-repeat;"; skin[541] = "background: url('source/skins/widowmaker/widowmaker_0017.png') center center no-repeat;"; skin[542] = "background: url('source/skins/widowmaker/widowmaker_0018.png') center center no-repeat;"; skin[543] = "background: url('source/skins/widowmaker/widowmaker_0019.png') center center no-repeat;";
-skin[544] = "background: url('source/skins/widowmaker/widowmaker_0020.png') center center no-repeat;"; skin[545] = "background: url('source/skins/widowmaker/widowmaker_0021.png') center center no-repeat;"; skin[546] = "background: url('source/skins/widowmaker/widowmaker_0022.png') center center no-repeat;"; skin[547] = "background: url('source/skins/winston/winston_0001.png') center center no-repeat;"; skin[548] = "background: url('source/skins/winston/winston_0002.png') center center no-repeat;"; skin[549] = "background: url('source/skins/winston/winston_0003.png') center center no-repeat;";
-skin[550] = "background: url('source/skins/winston/winston_0004.png') center center no-repeat;"; skin[551] = "background: url('source/skins/winston/winston_0005.png') center center no-repeat;"; skin[552] = "background: url('source/skins/winston/winston_0006.png') center center no-repeat;"; skin[553] = "background: url('source/skins/winston/winston_0007.png') center center no-repeat;"; skin[554] = "background: url('source/skins/winston/winston_0008.png') center center no-repeat;"; skin[555] = "background: url('source/skins/winston/winston_0009.png') center center no-repeat;";
-skin[556] = "background: url('source/skins/winston/winston_0010.png') center center no-repeat;"; skin[557] = "background: url('source/skins/winston/winston_0011.png') center center no-repeat;"; skin[558] = "background: url('source/skins/winston/winston_0012.png') center center no-repeat;"; skin[559] = "background: url('source/skins/winston/winston_0013.png') center center no-repeat;"; skin[560] = "background: url('source/skins/winston/winston_0014.png') center center no-repeat;"; skin[561] = "background: url('source/skins/winston/winston_0015.png') center center no-repeat;";
-skin[562] = "background: url('source/skins/winston/winston_0016.png') center center no-repeat;"; skin[563] = "background: url('source/skins/wreckingball/wreckingball_0001.png') center center no-repeat;"; skin[564] = "background: url('source/skins/wreckingball/wreckingball_0002.png') center center no-repeat;"; skin[565] = "background: url('source/skins/wreckingball/wreckingball_0003.png') center center no-repeat;"; skin[566] = "background: url('source/skins/wreckingball/wreckingball_0004.png') center center no-repeat;";
-skin[567] = "background: url('source/skins/wreckingball/wreckingball_0005.png') center center no-repeat;"; skin[568] = "background: url('source/skins/wreckingball/wreckingball_0006.png') center center no-repeat;"; skin[569] = "background: url('source/skins/wreckingball/wreckingball_0007.png') center center no-repeat;"; skin[570] = "background: url('source/skins/wreckingball/wreckingball_0008.png') center center no-repeat;"; skin[571] = "background: url('source/skins/wreckingball/wreckingball_0009.png') center center no-repeat;";
-skin[572] = "background: url('source/skins/wreckingball/wreckingball_0010.png') center center no-repeat;"; skin[573] = "background: url('source/skins/wreckingball/wreckingball_0011.png') center center no-repeat;"; skin[574] = "background: url('source/skins/wreckingball/wreckingball_0012.png') center center no-repeat;"; skin[575] = "background: url('source/skins/wreckingball/wreckingball_0013.png') center center no-repeat;"; skin[576] = "background: url('source/skins/wreckingball/wreckingball_0014.png') center center no-repeat;";
-skin[577] = "background: url('source/skins/wreckingball/wreckingball_0015.png') center center no-repeat;"; skin[578] = "background: url('source/skins/zarya/zarya_0001.png') center center no-repeat;"; skin[579] = "background: url('source/skins/zarya/zarya_0002.png') center center no-repeat;"; skin[580] = "background: url('source/skins/zarya/zarya_0003.png') center center no-repeat;"; skin[581] = "background: url('source/skins/zarya/zarya_0004.png') center center no-repeat;"; skin[582] = "background: url('source/skins/zarya/zarya_0005.png') center center no-repeat;";
-skin[583] = "background: url('source/skins/zarya/zarya_0006.png') center center no-repeat;"; skin[584] = "background: url('source/skins/zarya/zarya_0007.png') center center no-repeat;"; skin[585] = "background: url('source/skins/zarya/zarya_0008.png') center center no-repeat;"; skin[586] = "background: url('source/skins/zarya/zarya_0009.png') center center no-repeat;"; skin[587] = "background: url('source/skins/zarya/zarya_0010.png') center center no-repeat;"; skin[588] = "background: url('source/skins/zarya/zarya_0011.png') center center no-repeat;";
-skin[589] = "background: url('source/skins/zarya/zarya_0012.png') center center no-repeat;"; skin[590] = "background: url('source/skins/zarya/zarya_0013.png') center center no-repeat;"; skin[591] = "background: url('source/skins/zarya/zarya_0014.png') center center no-repeat;"; skin[592] = "background: url('source/skins/zarya/zarya_0015.png') center center no-repeat;"; skin[593] = "background: url('source/skins/zarya/zarya_0016.png') center center no-repeat;"; skin[594] = "background: url('source/skins/zarya/zarya_0017.png') center center no-repeat;";
-skin[595] = "background: url('source/skins/zarya/zarya_0018.png') center center no-repeat;"; skin[596] = "background: url('source/skins/zarya/zarya_0019.png') center center no-repeat;"; skin[597] = "background: url('source/skins/zarya/zarya_0020.png') center center no-repeat;"; skin[598] = "background: url('source/skins/zenyatta/zenyatta_0001.png') center center no-repeat;"; skin[599] = "background: url('source/skins/zenyatta/zenyatta_0002.png') center center no-repeat;"; skin[600] = "background: url('source/skins/zenyatta/zenyatta_0003.png') center center no-repeat;";
-skin[601] = "background: url('source/skins/zenyatta/zenyatta_0004.png') center center no-repeat;"; skin[602] = "background: url('source/skins/zenyatta/zenyatta_0005.png') center center no-repeat;"; skin[603] = "background: url('source/skins/zenyatta/zenyatta_0006.png') center center no-repeat;"; skin[604] = "background: url('source/skins/zenyatta/zenyatta_0007.png') center center no-repeat;"; skin[605] = "background: url('source/skins/zenyatta/zenyatta_0008.png') center center no-repeat;"; skin[606] = "background: url('source/skins/zenyatta/zenyatta_0009.png') center center no-repeat;";
-skin[607] = "background: url('source/skins/zenyatta/zenyatta_0010.png') center center no-repeat;"; skin[608] = "background: url('source/skins/zenyatta/zenyatta_0011.png') center center no-repeat;"; skin[609] = "background: url('source/skins/zenyatta/zenyatta_0012.png') center center no-repeat;"; skin[610] = "background: url('source/skins/zenyatta/zenyatta_0013.png') center center no-repeat;"; skin[611] = "background: url('source/skins/zenyatta/zenyatta_0014.png') center center no-repeat;"; skin[612] = "background: url('source/skins/zenyatta/zenyatta_0015.png') center center no-repeat;";
-skin[613] = "background: url('source/skins/zenyatta/zenyatta_0016.png') center center no-repeat;"; skin[614] = "background: url('source/skins/zenyatta/zenyatta_0017.png') center center no-repeat;"; skin[615] = "background: url('source/skins/zenyatta/zenyatta_0018.png') center center no-repeat;"; skin[616] = "background: url('source/skins/zenyatta/zenyatta_0019.png') center center no-repeat;";
+var skin = "background: url('source/skins/ana/ana_0001.png') center center no-repeat;,background: url('source/skins/ana/ana_0002.png') center center no-repeat;,background: url('source/skins/ana/ana_0003.png') center center no-repeat;,background: url('source/skins/ana/ana_0004.png') center center no-repeat;,background: url('source/skins/ana/ana_0006.png') center center no-repeat;,background: url('source/skins/ana/ana_0007.png') center center no-repeat;,background: url('source/skins/ana/ana_0008.png') center center no-repeat;,background: url('source/skins/ana/ana_0009.png') center center no-repeat;,background: url('source/skins/ana/ana_0010.png') center center no-repeat;,background: url('source/skins/ana/ana_0011.png') center center no-repeat;,background: url('source/skins/ana/ana_0012.png') center center no-repeat;,background: url('source/skins/ana/ana_0013.png') center center no-repeat;,background: url('source/skins/ana/ana_0014.png') center center no-repeat;,background: url('source/skins/ana/ana_0015.png') center center no-repeat;,background: url('source/skins/ana/ana_0016.png') center center no-repeat;,background: url('source/skins/ana/ana_0017.png') center center no-repeat;,background: url('source/skins/ana/ana_0018.png') center center no-repeat;,background: url('source/skins/ana/ana_0019.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0001.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0002.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0003.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0004.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0005.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0006.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0007.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0008.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0009.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0010.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0011.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0012.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0013.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0014.png') center center no-repeat;,background: url('source/skins/ashe/ashe_0015.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0001.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0002.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0003.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0004.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0005.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0006.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0007.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0008.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0009.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0010.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0011.png') center center no-repeat;,background: url('source/skins/baptiste/baptiste_0012.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0001.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0002.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0003.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0004.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0005.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0006.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0007.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0008.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0009.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0010.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0011.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0012.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0013.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0014.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0015.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0016.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0017.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0018.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0019.png') center center no-repeat;,background: url('source/skins/bastion/bastion_0020.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0001.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0002.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0003.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0004.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0005.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0006.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0007.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0008.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0009.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0010.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0011.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0012.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0013.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0014.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0015.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0016.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0017.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0018.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0019.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0020.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0021.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0022.png') center center no-repeat;,background: url('source/skins/brigitte/brigitte_0023.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0001.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0002.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0003.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0004.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0005.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0006.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0007.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0008.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0009.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0010.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0011.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0012.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0013.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0014.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0015.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0016.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0017.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0018.png') center center no-repeat;,background: url('source/skins/d.va/d.va_0019.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0001.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0002.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0003.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0004.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0005.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0006.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0007.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0008.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0009.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0010.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0011.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0012.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0013.png') center center no-repeat;,background: url('source/skins/doomfist/doomfist_0014.png') center center no-repeat;".split(
+	','
+)
+skin[130] = "background: url('source/skins/doomfist/doomfist_0015.png') center center no-repeat;"
+skin[131] = "background: url('source/skins/doomfist/doomfist_0016.png') center center no-repeat;"
+skin[132] = "background: url('source/skins/doomfist/doomfist_0017.png') center center no-repeat;"
+skin[133] = "background: url('source/skins/echo/echo_0001.png') center center no-repeat;"
+skin[135] = "background: url('source/skins/echo/echo_0002.png') center center no-repeat;"
+skin[136] = "background: url('source/skins/echo/echo_0003.png') center center no-repeat;"
+skin[137] = "background: url('source/skins/echo/echo_0004.png') center center no-repeat;"
+skin[138] = "background: url('source/skins/echo/echo_0005.png') center center no-repeat;"
+skin[139] = "background: url('source/skins/echo/echo_0006.png') center center no-repeat;"
+skin[140] = "background: url('source/skins/echo/echo_0007.png') center center no-repeat;"
+skin[141] = "background: url('source/skins/echo/echo_0008.png') center center no-repeat;"
+skin[142] = "background: url('source/skins/echo/echo_0009.png') center center no-repeat;"
+skin[143] = "background: url('source/skins/echo/echo_0010.png') center center no-repeat;"
+skin[144] = "background: url('source/skins/echo/echo_0011.png') center center no-repeat;"
+skin[145] = "background: url('source/skins/genji/genji_0001.png') center center no-repeat;"
+skin[146] = "background: url('source/skins/genji/genji_0002.png') center center no-repeat;"
+skin[147] = "background: url('source/skins/genji/genji_0003.png') center center no-repeat;"
+skin[148] = "background: url('source/skins/genji/genji_0004.png') center center no-repeat;"
+skin[149] = "background: url('source/skins/genji/genji_0005.png') center center no-repeat;"
+skin[150] = "background: url('source/skins/genji/genji_0006.png') center center no-repeat;"
+skin[151] = "background: url('source/skins/genji/genji_0007.png') center center no-repeat;"
+skin[152] = "background: url('source/skins/genji/genji_0008.png') center center no-repeat;"
+skin[153] = "background: url('source/skins/genji/genji_0009.png') center center no-repeat;"
+skin[154] = "background: url('source/skins/genji/genji_0010.png') center center no-repeat;"
+skin[155] = "background: url('source/skins/genji/genji_0011.png') center center no-repeat;"
+skin[156] = "background: url('source/skins/genji/genji_0012.png') center center no-repeat;"
+skin[157] = "background: url('source/skins/genji/genji_0013.png') center center no-repeat;"
+skin[158] = "background: url('source/skins/genji/genji_0014.png') center center no-repeat;"
+skin[159] = "background: url('source/skins/genji/genji_0015.png') center center no-repeat;"
+skin[160] = "background: url('source/skins/genji/genji_0016.png') center center no-repeat;"
+skin[161] = "background: url('source/skins/hanzo/hanzo_0001.png') center center no-repeat;"
+skin[162] = "background: url('source/skins/hanzo/hanzo_0002.png') center center no-repeat;"
+skin[163] = "background: url('source/skins/hanzo/hanzo_0003.png') center center no-repeat;"
+skin[164] = "background: url('source/skins/hanzo/hanzo_0004.png') center center no-repeat;"
+skin[165] = "background: url('source/skins/hanzo/hanzo_0005.png') center center no-repeat;"
+skin[167] = "background: url('source/skins/hanzo/hanzo_0006.png') center center no-repeat;"
+skin[168] = "background: url('source/skins/hanzo/hanzo_0007.png') center center no-repeat;"
+skin[169] = "background: url('source/skins/hanzo/hanzo_0008.png') center center no-repeat;"
+skin[170] = "background: url('source/skins/hanzo/hanzo_0009.png') center center no-repeat;"
+skin[171] = "background: url('source/skins/hanzo/hanzo_0010.png') center center no-repeat;"
+skin[172] = "background: url('source/skins/hanzo/hanzo_0011.png') center center no-repeat;"
+skin[173] = "background: url('source/skins/hanzo/hanzo_0012.png') center center no-repeat;"
+skin[174] = "background: url('source/skins/hanzo/hanzo_0013.png') center center no-repeat;"
+skin[175] = "background: url('source/skins/hanzo/hanzo_0014.png') center center no-repeat;"
+skin[176] = "background: url('source/skins/hanzo/hanzo_0015.png') center center no-repeat;"
+skin[177] = "background: url('source/skins/hanzo/hanzo_0016.png') center center no-repeat;"
+skin[178] = "background: url('source/skins/hanzo/hanzo_0017.png') center center no-repeat;"
+skin[179] = "background: url('source/skins/hanzo/hanzo_0018.png') center center no-repeat;"
+skin[181] = "background: url('source/skins/junkrat/junkrat_0001.png') center center no-repeat;"
+skin[182] = "background: url('source/skins/junkrat/junkrat_0002.png') center center no-repeat;"
+skin[183] = "background: url('source/skins/junkrat/junkrat_0003.png') center center no-repeat;"
+skin[184] = "background: url('source/skins/junkrat/junkrat_0004.png') center center no-repeat;"
+skin[185] = "background: url('source/skins/junkrat/junkrat_0005.png') center center no-repeat;"
+skin[186] = "background: url('source/skins/junkrat/junkrat_0006.png') center center no-repeat;"
+skin[187] = "background: url('source/skins/junkrat/junkrat_0007.png') center center no-repeat;"
+skin[188] = "background: url('source/skins/junkrat/junkrat_0008.png') center center no-repeat;"
+skin[189] = "background: url('source/skins/junkrat/junkrat_0009.png') center center no-repeat;"
+skin[191] = "background: url('source/skins/junkrat/junkrat_0010.png') center center no-repeat;"
+skin[192] = "background: url('source/skins/junkrat/junkrat_0011.png') center center no-repeat;"
+skin[193] = "background: url('source/skins/junkrat/junkrat_0012.png') center center no-repeat;"
+skin[194] = "background: url('source/skins/junkrat/junkrat_0013.png') center center no-repeat;"
+skin[195] = "background: url('source/skins/junkrat/junkrat_0014.png') center center no-repeat;"
+skin[196] = "background: url('source/skins/junkrat/junkrat_0015.png') center center no-repeat;"
+skin[197] = "background: url('source/skins/junkrat/junkrat_0016.png') center center no-repeat;"
+skin[198] = "background: url('source/skins/junkrat/junkrat_0017.png') center center no-repeat;"
+skin[199] = "background: url('source/skins/junkrat/junkrat_0018.png') center center no-repeat;"
+skin[200] = "background: url('source/skins/junkrat/junkrat_0019.png') center center no-repeat;"
+skin[201] = "background: url('source/skins/junkrat/junkrat_0020.png') center center no-repeat;"
+skin[202] = "background: url('source/skins/junkrat/junkrat_0021.png') center center no-repeat;"
+skin[203] = "background: url('source/skins/lucio/lucio_0001.png') center center no-repeat;"
+skin[204] = "background: url('source/skins/lucio/lucio_0002.png') center center no-repeat;"
+skin[205] = "background: url('source/skins/lucio/lucio_0003.png') center center no-repeat;"
+skin[206] = "background: url('source/skins/lucio/lucio_0004.png') center center no-repeat;"
+skin[207] = "background: url('source/skins/lucio/lucio_0005.png') center center no-repeat;"
+skin[208] = "background: url('source/skins/lucio/lucio_0006.png') center center no-repeat;"
+skin[219] = "background: url('source/skins/lucio/lucio_0007.png') center center no-repeat;"
+skin[210] = "background: url('source/skins/lucio/lucio_0008.png') center center no-repeat;"
+skin[211] = "background: url('source/skins/lucio/lucio_0009.png') center center no-repeat;"
+skin[212] = "background: url('source/skins/lucio/lucio_0010.png') center center no-repeat;"
+skin[213] = "background: url('source/skins/lucio/lucio_0011.png') center center no-repeat;"
+skin[214] = "background: url('source/skins/lucio/lucio_0012.png') center center no-repeat;"
+skin[215] = "background: url('source/skins/lucio/lucio_0013.png') center center no-repeat;"
+skin[216] = "background: url('source/skins/lucio/lucio_0014.png') center center no-repeat;"
+skin[217] = "background: url('source/skins/lucio/lucio_0015.png') center center no-repeat;"
+skin[218] = "background: url('source/skins/lucio/lucio_0016.png') center center no-repeat;"
+skin[219] = "background: url('source/skins/lucio/lucio_0017.png') center center no-repeat;"
+skin[220] = "background: url('source/skins/lucio/lucio_0018.png') center center no-repeat;"
+skin[221] = "background: url('source/skins/lucio/lucio_0019.png') center center no-repeat;"
+skin[222] = "background: url('source/skins/lucio/lucio_0020.png') center center no-repeat;"
+skin[223] = "background: url('source/skins/lucio/lucio_0021.png') center center no-repeat;"
+skin[224] = "background: url('source/skins/mccree/mccree_0001.png') center center no-repeat;"
+skin[225] = "background: url('source/skins/mccree/mccree_0002.png') center center no-repeat;"
+skin[226] = "background: url('source/skins/mccree/mccree_0003.png') center center no-repeat;"
+skin[227] = "background: url('source/skins/mccree/mccree_0004.png') center center no-repeat;"
+skin[228] = "background: url('source/skins/mccree/mccree_0005.png') center center no-repeat;"
+skin[229] = "background: url('source/skins/mccree/mccree_0006.png') center center no-repeat;"
+skin[230] = "background: url('source/skins/mccree/mccree_0007.png') center center no-repeat;"
+skin[231] = "background: url('source/skins/mccree/mccree_0008.png') center center no-repeat;"
+skin[232] = "background: url('source/skins/mccree/mccree_0009.png') center center no-repeat;"
+skin[233] = "background: url('source/skins/mccree/mccree_0010.png') center center no-repeat;"
+skin[234] = "background: url('source/skins/mccree/mccree_0011.png') center center no-repeat;"
+skin[235] = "background: url('source/skins/mccree/mccree_0012.png') center center no-repeat;"
+skin[236] = "background: url('source/skins/mccree/mccree_0013.png') center center no-repeat;"
+skin[237] = "background: url('source/skins/mccree/mccree_0014.png') center center no-repeat;"
+skin[238] = "background: url('source/skins/mccree/mccree_0015.png') center center no-repeat;"
+skin[239] = "background: url('source/skins/mccree/mccree_0016.png') center center no-repeat;"
+skin[240] = "background: url('source/skins/mccree/mccree_0017.png') center center no-repeat;"
+skin[241] = "background: url('source/skins/mccree/mccree_0018.png') center center no-repeat;"
+skin[242] = "background: url('source/skins/mccree/mccree_0019.png') center center no-repeat;"
+skin[243] = "background: url('source/skins/mccree/mccree_0020.png') center center no-repeat;"
+skin[244] = "background: url('source/skins/mccree/mccree_0021.png') center center no-repeat;"
+skin[245] = "background: url('source/skins/mccree/mccree_0022.png') center center no-repeat;"
+skin[246] = "background: url('source/skins/mccree/mccree_0023.png') center center no-repeat;"
+skin[247] = "background: url('source/skins/mei/mei_0001.png') center center no-repeat;"
+skin[248] = "background: url('source/skins/mei/mei_0002.png') center center no-repeat;"
+skin[249] = "background: url('source/skins/mei/mei_0003.png') center center no-repeat;"
+skin[251] = "background: url('source/skins/mei/mei_0004.png') center center no-repeat;"
+skin[252] = "background: url('source/skins/mei/mei_0005.png') center center no-repeat;"
+skin[253] = "background: url('source/skins/mei/mei_0006.png') center center no-repeat;"
+skin[254] = "background: url('source/skins/mei/mei_0007.png') center center no-repeat;"
+skin[255] = "background: url('source/skins/mei/mei_0008.png') center center no-repeat;"
+skin[256] = "background: url('source/skins/mei/mei_0009.png') center center no-repeat;"
+skin[257] = "background: url('source/skins/mei/mei_0010.png') center center no-repeat;"
+skin[258] = "background: url('source/skins/mei/mei_0011.png') center center no-repeat;"
+skin[259] = "background: url('source/skins/mei/mei_0012.png') center center no-repeat;"
+skin[260] = "background: url('source/skins/mei/mei_0013.png') center center no-repeat;"
+skin[261] = "background: url('source/skins/mei/mei_0014.png') center center no-repeat;"
+skin[262] = "background: url('source/skins/mei/mei_0015.png') center center no-repeat;"
+skin[263] = "background: url('source/skins/mei/mei_0016.png') center center no-repeat;"
+skin[264] = "background: url('source/skins/mei/mei_0017.png') center center no-repeat;"
+skin[265] = "background: url('source/skins/mei/mei_0018.png') center center no-repeat;"
+skin[266] = "background: url('source/skins/mei/mei_0019.png') center center no-repeat;"
+skin[267] = "background: url('source/skins/mei/mei_0020.png') center center no-repeat;"
+skin[268] = "background: url('source/skins/mercy/mercy_0001.png') center center no-repeat;"
+skin[270] = "background: url('source/skins/mercy/mercy_0002.png') center center no-repeat;"
+skin[271] = "background: url('source/skins/mercy/mercy_0003.png') center center no-repeat;"
+skin[272] = "background: url('source/skins/mercy/mercy_0004.png') center center no-repeat;"
+skin[273] = "background: url('source/skins/mercy/mercy_0005.png') center center no-repeat;"
+skin[274] = "background: url('source/skins/mercy/mercy_0006.png') center center no-repeat;"
+skin[275] = "background: url('source/skins/mercy/mercy_0007.png') center center no-repeat;"
+skin[276] = "background: url('source/skins/mercy/mercy_0008.png') center center no-repeat;"
+skin[277] = "background: url('source/skins/mercy/mercy_0009.png') center center no-repeat;"
+skin[278] = "background: url('source/skins/mercy/mercy_0010.png') center center no-repeat;"
+skin[279] = "background: url('source/skins/mercy/mercy_0011.png') center center no-repeat;"
+skin[280] = "background: url('source/skins/mercy/mercy_0012.png') center center no-repeat;"
+skin[281] = "background: url('source/skins/mercy/mercy_0013.png') center center no-repeat;"
+skin[282] = "background: url('source/skins/mercy/mercy_0014.png') center center no-repeat;"
+skin[283] = "background: url('source/skins/mercy/mercy_0015.png') center center no-repeat;"
+skin[284] = "background: url('source/skins/mercy/mercy_0016.png') center center no-repeat;"
+skin[285] = "background: url('source/skins/mercy/mercy_0017.png') center center no-repeat;"
+skin[286] = "background: url('source/skins/mercy/mercy_0018.png') center center no-repeat;"
+skin[287] = "background: url('source/skins/mercy/mercy_0019.png') center center no-repeat;"
+skin[288] = "background: url('source/skins/mercy/mercy_0020.png') center center no-repeat;"
+skin[289] = "background: url('source/skins/mercy/mercy_0021.png') center center no-repeat;"
+skin[290] = "background: url('source/skins/mercy/mercy_0022.png') center center no-repeat;"
+skin[291] = "background: url('source/skins/mercy/mercy_0023.png') center center no-repeat;"
+skin[292] = "background: url('source/skins/moira/moira_0001.png') center center no-repeat;"
+skin[293] = "background: url('source/skins/moira/moira_0002.png') center center no-repeat;"
+skin[294] = "background: url('source/skins/moira/moira_0003.png') center center no-repeat;"
+skin[295] = "background: url('source/skins/moira/moira_0004.png') center center no-repeat;"
+skin[296] = "background: url('source/skins/moira/moira_0005.png') center center no-repeat;"
+skin[297] = "background: url('source/skins/moira/moira_0006.png') center center no-repeat;"
+skin[298] = "background: url('source/skins/moira/moira_0007.png') center center no-repeat;"
+skin[299] = "background: url('source/skins/moira/moira_0008.png') center center no-repeat;"
+skin[300] = "background: url('source/skins/moira/moira_0009.png') center center no-repeat;"
+skin[301] = "background: url('source/skins/moira/moira_0010.png') center center no-repeat;"
+skin[302] = "background: url('source/skins/moira/moira_0011.png') center center no-repeat;"
+skin[303] = "background: url('source/skins/moira/moira_0012.png') center center no-repeat;"
+skin[304] = "background: url('source/skins/moira/moira_0013.png') center center no-repeat;"
+skin[305] = "background: url('source/skins/moira/moira_0014.png') center center no-repeat;"
+skin[306] = "background: url('source/skins/moira/moira_0015.png') center center no-repeat;"
+skin[307] = "background: url('source/skins/moira/moira_0016.png') center center no-repeat;"
+skin[308] = "background: url('source/skins/moira/moira_0017.png') center center no-repeat;"
+skin[309] = "background: url('source/skins/moira/moira_0018.png') center center no-repeat;"
+skin[310] = "background: url('source/skins/orisa/orisa_0001.png') center center no-repeat;"
+skin[311] = "background: url('source/skins/orisa/orisa_0002.png') center center no-repeat;"
+skin[312] = "background: url('source/skins/orisa/orisa_0003.png') center center no-repeat;"
+skin[313] = "background: url('source/skins/orisa/orisa_0004.png') center center no-repeat;"
+skin[314] = "background: url('source/skins/orisa/orisa_0005.png') center center no-repeat;"
+skin[315] = "background: url('source/skins/orisa/orisa_0006.png') center center no-repeat;"
+skin[316] = "background: url('source/skins/orisa/orisa_0007.png') center center no-repeat;"
+skin[317] = "background: url('source/skins/orisa/orisa_0008.png') center center no-repeat;"
+skin[318] = "background: url('source/skins/orisa/orisa_0009.png') center center no-repeat;"
+skin[319] = "background: url('source/skins/orisa/orisa_0010.png') center center no-repeat;"
+skin[320] = "background: url('source/skins/orisa/orisa_0011.png') center center no-repeat;"
+skin[321] = "background: url('source/skins/orisa/orisa_0012.png') center center no-repeat;"
+skin[322] = "background: url('source/skins/orisa/orisa_0013.png') center center no-repeat;"
+skin[323] = "background: url('source/skins/orisa/orisa_0014.png') center center no-repeat;"
+skin[324] = "background: url('source/skins/orisa/orisa_0015.png') center center no-repeat;"
+skin[325] = "background: url('source/skins/orisa/orisa_0016.png') center center no-repeat;"
+skin[326] = "background: url('source/skins/phara/phara_0001.png') center center no-repeat;"
+skin[327] = "background: url('source/skins/phara/phara_0002.png') center center no-repeat;"
+skin[328] = "background: url('source/skins/phara/phara_0003.png') center center no-repeat;"
+skin[329] = "background: url('source/skins/phara/phara_0004.png') center center no-repeat;"
+skin[330] = "background: url('source/skins/phara/phara_0005.png') center center no-repeat;"
+skin[331] = "background: url('source/skins/phara/phara_0006.png') center center no-repeat;"
+skin[332] = "background: url('source/skins/phara/phara_0007.png') center center no-repeat;"
+skin[333] = "background: url('source/skins/phara/phara_0008.png') center center no-repeat;"
+skin[334] = "background: url('source/skins/phara/phara_0009.png') center center no-repeat;"
+skin[335] = "background: url('source/skins/phara/phara_0010.png') center center no-repeat;"
+skin[336] = "background: url('source/skins/phara/phara_0011.png') center center no-repeat;"
+skin[337] = "background: url('source/skins/phara/phara_0012.png') center center no-repeat;"
+skin[338] = "background: url('source/skins/phara/phara_0013.png') center center no-repeat;"
+skin[339] = "background: url('source/skins/phara/phara_0014.png') center center no-repeat;"
+skin[340] = "background: url('source/skins/phara/phara_0015.png') center center no-repeat;"
+skin[341] = "background: url('source/skins/phara/phara_0016.png') center center no-repeat;"
+skin[342] = "background: url('source/skins/phara/phara_0017.png') center center no-repeat;"
+skin[343] = "background: url('source/skins/phara/phara_0018.png') center center no-repeat;"
+skin[344] = "background: url('source/skins/phara/phara_0019.png') center center no-repeat;"
+skin[345] = "background: url('source/skins/phara/phara_0020.png') center center no-repeat;"
+skin[346] = "background: url('source/skins/phara/phara_0021.png') center center no-repeat;"
+skin[347] = "background: url('source/skins/phara/phara_0022.png') center center no-repeat;"
+skin[348] = "background: url('source/skins/phara/phara_0023.png') center center no-repeat;"
+skin[349] = "background: url('source/skins/reaper/reaper_0001.png') center center no-repeat;"
+skin[350] = "background: url('source/skins/reaper/reaper_0002.png') center center no-repeat;"
+skin[351] = "background: url('source/skins/reaper/reaper_0003.png') center center no-repeat;"
+skin[352] = "background: url('source/skins/reaper/reaper_0004.png') center center no-repeat;"
+skin[353] = "background: url('source/skins/reaper/reaper_0005.png') center center no-repeat;"
+skin[354] = "background: url('source/skins/reaper/reaper_0006.png') center center no-repeat;"
+skin[355] = "background: url('source/skins/reaper/reaper_0007.png') center center no-repeat;"
+skin[356] = "background: url('source/skins/reaper/reaper_0008.png') center center no-repeat;"
+skin[357] = "background: url('source/skins/reaper/reaper_0009.png') center center no-repeat;"
+skin[358] = "background: url('source/skins/reaper/reaper_0010.png') center center no-repeat;"
+skin[359] = "background: url('source/skins/reaper/reaper_0011.png') center center no-repeat;"
+skin[360] = "background: url('source/skins/reaper/reaper_0012.png') center center no-repeat;"
+skin[361] = "background: url('source/skins/reaper/reaper_0013.png') center center no-repeat;"
+skin[362] = "background: url('source/skins/reaper/reaper_0014.png') center center no-repeat;"
+skin[363] = "background: url('source/skins/reaper/reaper_0015.png') center center no-repeat;"
+skin[364] = "background: url('source/skins/reaper/reaper_0016.png') center center no-repeat;"
+skin[365] = "background: url('source/skins/reaper/reaper_0017.png') center center no-repeat;"
+skin[366] = "background: url('source/skins/reaper/reaper_0018.png') center center no-repeat;"
+skin[367] = "background: url('source/skins/reaper/reaper_0019.png') center center no-repeat;"
+skin[368] = "background: url('source/skins/reaper/reaper_0020.png') center center no-repeat;"
+skin[369] = "background: url('source/skins/reaper/reaper_0021.png') center center no-repeat;"
+skin[370] = "background: url('source/skins/reinhardt/reinhardt_0001.png') center center no-repeat;"
+skin[371] = "background: url('source/skins/reinhardt/reinhardt_0002.png') center center no-repeat;"
+skin[372] = "background: url('source/skins/reinhardt/reinhardt_0003.png') center center no-repeat;"
+skin[373] = "background: url('source/skins/reinhardt/reinhardt_0004.png') center center no-repeat;"
+skin[374] = "background: url('source/skins/reinhardt/reinhardt_0005.png') center center no-repeat;"
+skin[375] = "background: url('source/skins/reinhardt/reinhardt_0006.png') center center no-repeat;"
+skin[376] = "background: url('source/skins/reinhardt/reinhardt_0007.png') center center no-repeat;"
+skin[377] = "background: url('source/skins/reinhardt/reinhardt_0008.png') center center no-repeat;"
+skin[379] = "background: url('source/skins/reinhardt/reinhardt_0009.png') center center no-repeat;"
+skin[380] = "background: url('source/skins/reinhardt/reinhardt_0010.png') center center no-repeat;"
+skin[381] = "background: url('source/skins/reinhardt/reinhardt_0011.png') center center no-repeat;"
+skin[382] = "background: url('source/skins/reinhardt/reinhardt_0012.png') center center no-repeat;"
+skin[383] = "background: url('source/skins/reinhardt/reinhardt_0013.png') center center no-repeat;"
+skin[384] = "background: url('source/skins/reinhardt/reinhardt_0014.png') center center no-repeat;"
+skin[385] = "background: url('source/skins/reinhardt/reinhardt_0015.png') center center no-repeat;"
+skin[386] = "background: url('source/skins/reinhardt/reinhardt_0016.png') center center no-repeat;"
+skin[387] = "background: url('source/skins/reinhardt/reinhardt_0017.png') center center no-repeat;"
+skin[388] = "background: url('source/skins/reinhardt/reinhardt_0018.png') center center no-repeat;"
+skin[389] = "background: url('source/skins/reinhardt/reinhardt_0019.png') center center no-repeat;"
+skin[391] = "background: url('source/skins/reinhardt/reinhardt_0020.png') center center no-repeat;"
+skin[392] = "background: url('source/skins/roadhog/roadhog_0001.png') center center no-repeat;"
+skin[393] = "background: url('source/skins/roadhog/roadhog_0002.png') center center no-repeat;"
+skin[394] = "background: url('source/skins/roadhog/roadhog_0003.png') center center no-repeat;"
+skin[395] = "background: url('source/skins/roadhog/roadhog_0004.png') center center no-repeat;"
+skin[396] = "background: url('source/skins/roadhog/roadhog_0005.png') center center no-repeat;"
+skin[397] = "background: url('source/skins/roadhog/roadhog_0006.png') center center no-repeat;"
+skin[398] = "background: url('source/skins/roadhog/roadhog_0007.png') center center no-repeat;"
+skin[399] = "background: url('source/skins/roadhog/roadhog_0008.png') center center no-repeat;"
+skin[400] = "background: url('source/skins/roadhog/roadhog_0009.png') center center no-repeat;"
+skin[401] = "background: url('source/skins/roadhog/roadhog_0010.png') center center no-repeat;"
+skin[402] = "background: url('source/skins/roadhog/roadhog_0011.png') center center no-repeat;"
+skin[403] = "background: url('source/skins/roadhog/roadhog_0012.png') center center no-repeat;"
+skin[404] = "background: url('source/skins/roadhog/roadhog_0013.png') center center no-repeat;"
+skin[402] = "background: url('source/skins/roadhog/roadhog_0014.png') center center no-repeat;"
+skin[406] = "background: url('source/skins/roadhog/roadhog_0015.png') center center no-repeat;"
+skin[407] = "background: url('source/skins/roadhog/roadhog_0016.png') center center no-repeat;"
+skin[408] = "background: url('source/skins/roadhog/roadhog_0017.png') center center no-repeat;"
+skin[409] = "background: url('source/skins/roadhog/roadhog_0018.png') center center no-repeat;"
+skin[410] = "background: url('source/skins/sigma/sigma_0001.png') center center no-repeat;"
+skin[411] = "background: url('source/skins/sigma/sigma_0002.png') center center no-repeat;"
+skin[412] = "background: url('source/skins/sigma/sigma_0003.png') center center no-repeat;"
+skin[413] = "background: url('source/skins/sigma/sigma_0004.png') center center no-repeat;"
+skin[414] = "background: url('source/skins/sigma/sigma_0005.png') center center no-repeat;"
+skin[415] = "background: url('source/skins/sigma/sigma_0006.png') center center no-repeat;"
+skin[416] = "background: url('source/skins/sigma/sigma_0007.png') center center no-repeat;"
+skin[417] = "background: url('source/skins/sigma/sigma_0008.png') center center no-repeat;"
+skin[418] = "background: url('source/skins/sigma/sigma_0009.png') center center no-repeat;"
+skin[419] = "background: url('source/skins/sigma/sigma_0010.png') center center no-repeat;"
+skin[420] = "background: url('source/skins/sigma/sigma_0011.png') center center no-repeat;"
+skin[421] = "background: url('source/skins/sigma/sigma_0012.png') center center no-repeat;"
+skin[422] = "background: url('source/skins/sigma/sigma_0013.png') center center no-repeat;"
+skin[423] = "background: url('source/skins/sigma/sigma_0014.png') center center no-repeat;"
+skin[424] = "background: url('source/skins/soldier76/soldier76_0001.png') center center no-repeat;"
+skin[425] = "background: url('source/skins/soldier76/soldier76_0002.png') center center no-repeat;"
+skin[426] = "background: url('source/skins/soldier76/soldier76_0003.png') center center no-repeat;"
+skin[427] = "background: url('source/skins/soldier76/soldier76_0004.png') center center no-repeat;"
+skin[428] = "background: url('source/skins/soldier76/soldier76_0005.png') center center no-repeat;"
+skin[429] = "background: url('source/skins/soldier76/soldier76_0006.png') center center no-repeat;"
+skin[430] = "background: url('source/skins/soldier76/soldier76_0007.png') center center no-repeat;"
+skin[431] = "background: url('source/skins/soldier76/soldier76_0008.png') center center no-repeat;"
+skin[432] = "background: url('source/skins/soldier76/soldier76_0009.png') center center no-repeat;"
+skin[433] = "background: url('source/skins/soldier76/soldier76_0010.png') center center no-repeat;"
+skin[434] = "background: url('source/skins/soldier76/soldier76_0011.png') center center no-repeat;"
+skin[435] = "background: url('source/skins/soldier76/soldier76_0012.png') center center no-repeat;"
+skin[436] = "background: url('source/skins/soldier76/soldier76_0013.png') center center no-repeat;"
+skin[437] = "background: url('source/skins/soldier76/soldier76_0014.png') center center no-repeat;"
+skin[438] = "background: url('source/skins/soldier76/soldier76_0015.png') center center no-repeat;"
+skin[439] = "background: url('source/skins/soldier76/soldier76_0016.png') center center no-repeat;"
+skin[440] = "background: url('source/skins/soldier76/soldier76_0017.png') center center no-repeat;"
+skin[441] = "background: url('source/skins/soldier76/soldier76_0018.png') center center no-repeat;"
+skin[442] = "background: url('source/skins/soldier76/soldier76_0019.png') center center no-repeat;"
+skin[443] = "background: url('source/skins/soldier76/soldier76_0020.png') center center no-repeat;"
+skin[444] = "background: url('source/skins/soldier76/soldier76_0021.png') center center no-repeat;"
+skin[445] = "background: url('source/skins/sombra/sombra_0002.png') center center no-repeat;"
+skin[446] = "background: url('source/skins/sombra/sombra_0003.png') center center no-repeat;"
+skin[447] = "background: url('source/skins/sombra/sombra_0004.png') center center no-repeat;"
+skin[448] = "background: url('source/skins/sombra/sombra_0005.png') center center no-repeat;"
+skin[449] = "background: url('source/skins/sombra/sombra_0006.png') center center no-repeat;"
+skin[450] = "background: url('source/skins/sombra/sombra_0007.png') center center no-repeat;"
+skin[451] = "background: url('source/skins/sombra/sombra_0008.png') center center no-repeat;"
+skin[452] = "background: url('source/skins/sombra/sombra_0009.png') center center no-repeat;"
+skin[453] = "background: url('source/skins/sombra/sombra_0010.png') center center no-repeat;"
+skin[454] = "background: url('source/skins/sombra/sombra_0011.png') center center no-repeat;"
+skin[455] = "background: url('source/skins/sombra/sombra_0012.png') center center no-repeat;"
+skin[456] = "background: url('source/skins/sombra/sombra_0013.png') center center no-repeat;"
+skin[457] = "background: url('source/skins/sombra/sombra_0014.png') center center no-repeat;"
+skin[458] = "background: url('source/skins/sombra/sombra_0015.png') center center no-repeat;"
+skin[459] = "background: url('source/skins/sombra/sombra_0016.png') center center no-repeat;"
+skin[460] = "background: url('source/skins/sombra/sombra_0017.png') center center no-repeat;"
+skin[461] = "background: url('source/skins/sombra/sombra_0018.png') center center no-repeat;"
+skin[462] = "background: url('source/skins/sombra/sombra_0019.png') center center no-repeat;"
+skin[463] = "background: url('source/skins/sombra/sombra_0020.png') center center no-repeat;"
+skin[464] = "background: url('source/skins/symmetra/symmetra_0001.png') center center no-repeat;"
+skin[465] = "background: url('source/skins/symmetra/symmetra_0002.png') center center no-repeat;"
+skin[466] = "background: url('source/skins/symmetra/symmetra_0003.png') center center no-repeat;"
+skin[467] = "background: url('source/skins/symmetra/symmetra_0004.png') center center no-repeat;"
+skin[468] = "background: url('source/skins/symmetra/symmetra_0005.png') center center no-repeat;"
+skin[469] = "background: url('source/skins/symmetra/symmetra_0006.png') center center no-repeat;"
+skin[470] = "background: url('source/skins/symmetra/symmetra_0007.png') center center no-repeat;"
+skin[471] = "background: url('source/skins/symmetra/symmetra_0008.png') center center no-repeat;"
+skin[472] = "background: url('source/skins/symmetra/symmetra_0009.png') center center no-repeat;"
+skin[473] = "background: url('source/skins/symmetra/symmetra_0010.png') center center no-repeat;"
+skin[474] = "background: url('source/skins/symmetra/symmetra_0011.png') center center no-repeat;"
+skin[475] = "background: url('source/skins/symmetra/symmetra_0012.png') center center no-repeat;"
+skin[476] = "background: url('source/skins/symmetra/symmetra_0013.png') center center no-repeat;"
+skin[477] = "background: url('source/skins/symmetra/symmetra_0014.png') center center no-repeat;"
+skin[478] = "background: url('source/skins/symmetra/symmetra_0015.png') center center no-repeat;"
+skin[479] = "background: url('source/skins/symmetra/symmetra_0016.png') center center no-repeat;"
+skin[480] = "background: url('source/skins/symmetra/symmetra_0017.png') center center no-repeat;"
+skin[481] = "background: url('source/skins/symmetra/symmetra_0018.png') center center no-repeat;"
+skin[482] = "background: url('source/skins/symmetra/symmetra_0019.png') center center no-repeat;"
+skin[483] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0001.png') center center no-repeat;"
+skin[484] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0002.png') center center no-repeat;"
+skin[485] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0003.png') center center no-repeat;"
+skin[486] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0004.png') center center no-repeat;"
+skin[487] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0005.png') center center no-repeat;"
+skin[488] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0006.png') center center no-repeat;"
+skin[489] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0007.png') center center no-repeat;"
+skin[490] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0008.png') center center no-repeat;"
+skin[491] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0009.png') center center no-repeat;"
+skin[492] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0010.png') center center no-repeat;"
+skin[493] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0011.png') center center no-repeat;"
+skin[494] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0012.png') center center no-repeat;"
+skin[495] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0013.png') center center no-repeat;"
+skin[496] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0014.png') center center no-repeat;"
+skin[497] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0015.png') center center no-repeat;"
+skin[498] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0016.png') center center no-repeat;"
+skin[499] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0017.png') center center no-repeat;"
+skin[500] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0018.png') center center no-repeat;"
+skin[501] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0019.png') center center no-repeat;"
+skin[502] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0020.png') center center no-repeat;"
+skin[503] = "background: url('source/skins/torbj\u00f6rn/torbj\u00f6rn_0021.png') center center no-repeat;"
+skin[504] = "background: url('source/skins/tracer/tracer_0001.png') center center no-repeat;"
+skin[505] = "background: url('source/skins/tracer/tracer_0002.png') center center no-repeat;"
+skin[506] = "background: url('source/skins/tracer/tracer_0003.png') center center no-repeat;"
+skin[507] = "background: url('source/skins/tracer/tracer_0004.png') center center no-repeat;"
+skin[508] = "background: url('source/skins/tracer/tracer_0005.png') center center no-repeat;"
+skin[509] = "background: url('source/skins/tracer/tracer_0006.png') center center no-repeat;"
+skin[510] = "background: url('source/skins/tracer/tracer_0007.png') center center no-repeat;"
+skin[511] = "background: url('source/skins/tracer/tracer_0008.png') center center no-repeat;"
+skin[512] = "background: url('source/skins/tracer/tracer_0009.png') center center no-repeat;"
+skin[513] = "background: url('source/skins/tracer/tracer_0010.png') center center no-repeat;"
+skin[514] = "background: url('source/skins/tracer/tracer_0011.png') center center no-repeat;"
+skin[515] = "background: url('source/skins/tracer/tracer_0012.png') center center no-repeat;"
+skin[516] = "background: url('source/skins/tracer/tracer_0013.png') center center no-repeat;"
+skin[517] = "background: url('source/skins/tracer/tracer_0014.png') center center no-repeat;"
+skin[518] = "background: url('source/skins/tracer/tracer_0015.png') center center no-repeat;"
+skin[519] = "background: url('source/skins/tracer/tracer_0016.png') center center no-repeat;"
+skin[520] = "background: url('source/skins/tracer/tracer_0017.png') center center no-repeat;"
+skin[521] = "background: url('source/skins/tracer/tracer_0018.png') center center no-repeat;"
+skin[522] = "background: url('source/skins/tracer/tracer_0019.png') center center no-repeat;"
+skin[523] = "background: url('source/skins/tracer/tracer_0020.png') center center no-repeat;"
+skin[524] = "background: url('source/skins/tracer/tracer_0021.png') center center no-repeat;"
+skin[525] = "background: url('source/skins/widowmaker/widowmaker_0001.png') center center no-repeat;"
+skin[526] = "background: url('source/skins/widowmaker/widowmaker_0002.png') center center no-repeat;"
+skin[527] = "background: url('source/skins/widowmaker/widowmaker_0003.png') center center no-repeat;"
+skin[528] = "background: url('source/skins/widowmaker/widowmaker_0004.png') center center no-repeat;"
+skin[529] = "background: url('source/skins/widowmaker/widowmaker_0005.png') center center no-repeat;"
+skin[530] = "background: url('source/skins/widowmaker/widowmaker_0006.png') center center no-repeat;"
+skin[531] = "background: url('source/skins/widowmaker/widowmaker_0007.png') center center no-repeat;"
+skin[532] = "background: url('source/skins/widowmaker/widowmaker_0008.png') center center no-repeat;"
+skin[533] = "background: url('source/skins/widowmaker/widowmaker_0009.png') center center no-repeat;"
+skin[534] = "background: url('source/skins/widowmaker/widowmaker_0010.png') center center no-repeat;"
+skin[535] = "background: url('source/skins/widowmaker/widowmaker_0011.png') center center no-repeat;"
+skin[536] = "background: url('source/skins/widowmaker/widowmaker_0012.png') center center no-repeat;"
+skin[537] = "background: url('source/skins/widowmaker/widowmaker_0013.png') center center no-repeat;"
+skin[538] = "background: url('source/skins/widowmaker/widowmaker_0014.png') center center no-repeat;"
+skin[539] = "background: url('source/skins/widowmaker/widowmaker_0015.png') center center no-repeat;"
+skin[540] = "background: url('source/skins/widowmaker/widowmaker_0016.png') center center no-repeat;"
+skin[541] = "background: url('source/skins/widowmaker/widowmaker_0017.png') center center no-repeat;"
+skin[542] = "background: url('source/skins/widowmaker/widowmaker_0018.png') center center no-repeat;"
+skin[543] = "background: url('source/skins/widowmaker/widowmaker_0019.png') center center no-repeat;"
+skin[544] = "background: url('source/skins/widowmaker/widowmaker_0020.png') center center no-repeat;"
+skin[545] = "background: url('source/skins/widowmaker/widowmaker_0021.png') center center no-repeat;"
+skin[546] = "background: url('source/skins/widowmaker/widowmaker_0022.png') center center no-repeat;"
+skin[547] = "background: url('source/skins/winston/winston_0001.png') center center no-repeat;"
+skin[548] = "background: url('source/skins/winston/winston_0002.png') center center no-repeat;"
+skin[549] = "background: url('source/skins/winston/winston_0003.png') center center no-repeat;"
+skin[550] = "background: url('source/skins/winston/winston_0004.png') center center no-repeat;"
+skin[551] = "background: url('source/skins/winston/winston_0005.png') center center no-repeat;"
+skin[552] = "background: url('source/skins/winston/winston_0006.png') center center no-repeat;"
+skin[553] = "background: url('source/skins/winston/winston_0007.png') center center no-repeat;"
+skin[554] = "background: url('source/skins/winston/winston_0008.png') center center no-repeat;"
+skin[555] = "background: url('source/skins/winston/winston_0009.png') center center no-repeat;"
+skin[556] = "background: url('source/skins/winston/winston_0010.png') center center no-repeat;"
+skin[557] = "background: url('source/skins/winston/winston_0011.png') center center no-repeat;"
+skin[558] = "background: url('source/skins/winston/winston_0012.png') center center no-repeat;"
+skin[559] = "background: url('source/skins/winston/winston_0013.png') center center no-repeat;"
+skin[560] = "background: url('source/skins/winston/winston_0014.png') center center no-repeat;"
+skin[561] = "background: url('source/skins/winston/winston_0015.png') center center no-repeat;"
+skin[562] = "background: url('source/skins/winston/winston_0016.png') center center no-repeat;"
+skin[563] = "background: url('source/skins/wreckingball/wreckingball_0001.png') center center no-repeat;"
+skin[564] = "background: url('source/skins/wreckingball/wreckingball_0002.png') center center no-repeat;"
+skin[565] = "background: url('source/skins/wreckingball/wreckingball_0003.png') center center no-repeat;"
+skin[566] = "background: url('source/skins/wreckingball/wreckingball_0004.png') center center no-repeat;"
+skin[567] = "background: url('source/skins/wreckingball/wreckingball_0005.png') center center no-repeat;"
+skin[568] = "background: url('source/skins/wreckingball/wreckingball_0006.png') center center no-repeat;"
+skin[569] = "background: url('source/skins/wreckingball/wreckingball_0007.png') center center no-repeat;"
+skin[570] = "background: url('source/skins/wreckingball/wreckingball_0008.png') center center no-repeat;"
+skin[571] = "background: url('source/skins/wreckingball/wreckingball_0009.png') center center no-repeat;"
+skin[572] = "background: url('source/skins/wreckingball/wreckingball_0010.png') center center no-repeat;"
+skin[573] = "background: url('source/skins/wreckingball/wreckingball_0011.png') center center no-repeat;"
+skin[574] = "background: url('source/skins/wreckingball/wreckingball_0012.png') center center no-repeat;"
+skin[575] = "background: url('source/skins/wreckingball/wreckingball_0013.png') center center no-repeat;"
+skin[576] = "background: url('source/skins/wreckingball/wreckingball_0014.png') center center no-repeat;"
+skin[577] = "background: url('source/skins/wreckingball/wreckingball_0015.png') center center no-repeat;"
+skin[578] = "background: url('source/skins/zarya/zarya_0001.png') center center no-repeat;"
+skin[579] = "background: url('source/skins/zarya/zarya_0002.png') center center no-repeat;"
+skin[580] = "background: url('source/skins/zarya/zarya_0003.png') center center no-repeat;"
+skin[581] = "background: url('source/skins/zarya/zarya_0004.png') center center no-repeat;"
+skin[582] = "background: url('source/skins/zarya/zarya_0005.png') center center no-repeat;"
+skin[583] = "background: url('source/skins/zarya/zarya_0006.png') center center no-repeat;"
+skin[584] = "background: url('source/skins/zarya/zarya_0007.png') center center no-repeat;"
+skin[585] = "background: url('source/skins/zarya/zarya_0008.png') center center no-repeat;"
+skin[586] = "background: url('source/skins/zarya/zarya_0009.png') center center no-repeat;"
+skin[587] = "background: url('source/skins/zarya/zarya_0010.png') center center no-repeat;"
+skin[588] = "background: url('source/skins/zarya/zarya_0011.png') center center no-repeat;"
+skin[589] = "background: url('source/skins/zarya/zarya_0012.png') center center no-repeat;"
+skin[590] = "background: url('source/skins/zarya/zarya_0013.png') center center no-repeat;"
+skin[591] = "background: url('source/skins/zarya/zarya_0014.png') center center no-repeat;"
+skin[592] = "background: url('source/skins/zarya/zarya_0015.png') center center no-repeat;"
+skin[593] = "background: url('source/skins/zarya/zarya_0016.png') center center no-repeat;"
+skin[594] = "background: url('source/skins/zarya/zarya_0017.png') center center no-repeat;"
+skin[595] = "background: url('source/skins/zarya/zarya_0018.png') center center no-repeat;"
+skin[596] = "background: url('source/skins/zarya/zarya_0019.png') center center no-repeat;"
+skin[597] = "background: url('source/skins/zarya/zarya_0020.png') center center no-repeat;"
+skin[598] = "background: url('source/skins/zenyatta/zenyatta_0001.png') center center no-repeat;"
+skin[599] = "background: url('source/skins/zenyatta/zenyatta_0002.png') center center no-repeat;"
+skin[600] = "background: url('source/skins/zenyatta/zenyatta_0003.png') center center no-repeat;"
+skin[601] = "background: url('source/skins/zenyatta/zenyatta_0004.png') center center no-repeat;"
+skin[602] = "background: url('source/skins/zenyatta/zenyatta_0005.png') center center no-repeat;"
+skin[603] = "background: url('source/skins/zenyatta/zenyatta_0006.png') center center no-repeat;"
+skin[604] = "background: url('source/skins/zenyatta/zenyatta_0007.png') center center no-repeat;"
+skin[605] = "background: url('source/skins/zenyatta/zenyatta_0008.png') center center no-repeat;"
+skin[606] = "background: url('source/skins/zenyatta/zenyatta_0009.png') center center no-repeat;"
+skin[607] = "background: url('source/skins/zenyatta/zenyatta_0010.png') center center no-repeat;"
+skin[608] = "background: url('source/skins/zenyatta/zenyatta_0011.png') center center no-repeat;"
+skin[609] = "background: url('source/skins/zenyatta/zenyatta_0012.png') center center no-repeat;"
+skin[610] = "background: url('source/skins/zenyatta/zenyatta_0013.png') center center no-repeat;"
+skin[611] = "background: url('source/skins/zenyatta/zenyatta_0014.png') center center no-repeat;"
+skin[612] = "background: url('source/skins/zenyatta/zenyatta_0015.png') center center no-repeat;"
+skin[613] = "background: url('source/skins/zenyatta/zenyatta_0016.png') center center no-repeat;"
+skin[614] = "background: url('source/skins/zenyatta/zenyatta_0017.png') center center no-repeat;"
+skin[615] = "background: url('source/skins/zenyatta/zenyatta_0018.png') center center no-repeat;"
+skin[616] = "background: url('source/skins/zenyatta/zenyatta_0019.png') center center no-repeat;"
 function changeSkin() {
-    var c = document.getElementById("skin"), b = document.getElementById("icon"); document.getElementById("timed"); var d = 1E3 * document.getElementById("usertime").value, a = Math.round(Math.floor(skin.length * Math.random())); c.style = skin[a]; 1 == timed.checked ? setTimeout("changeSkin()", d) : 0 == timed.checked && clearTimeout(void 0); 0 <= a && 17 >= a ? b.style = "background: url('source/icons/new/ana.png') center center no-repeat;" : 18 <= a && 32 >= a ? b.style = "background: url('source/icons/new/ashe.png') center center no-repeat;" :
-        33 <= a && 44 >= a ? b.style = "background: url('source/icons/new/baptiste.png') center center no-repeat;" : 45 <= a && 64 >= a ? b.style = "background: url('source/icons/new/bastion.png') center center no-repeat;" : 65 <= a && 87 >= a ? b.style = "background: url('source/icons/new/brigitte.png') center center no-repeat;" : 88 <= a && 106 >= a ? b.style = "background: url('source/icons/new/dva.png') center center no-repeat;" : 107 <= a && 132 >= a ? b.style = "background: url('source/icons/new/doomfist.png') center center no-repeat;" : 133 <= a && 144 >= a ? b.style =
-            "background: url('source/icons/new/echo.png') center center no-repeat;" : 145 <= a && 160 >= a ? b.style = "background: url('source/icons/new/genji.png') center center no-repeat;" : 161 <= a && 179 >= a ? b.style = "background: url('source/icons/new/hanzo.png') center center no-repeat;" : 181 <= a && 202 >= a ? b.style = "background: url('source/icons/new/junkrat.png') center center no-repeat;" : 203 <= a && 223 >= a ? b.style = "background: url('source/icons/new/lucio.png') center center no-repeat;" : 224 <= a && 246 >= a ? b.style = "background: url('source/icons/new/mccree.png') center center no-repeat;" :
-                247 <= a && 267 >= a ? b.style = "background: url('source/icons/new/mei.png') center center no-repeat;" : 268 <= a && 291 >= a ? b.style = "background: url('source/icons/new/mercy.png') center center no-repeat;" : 292 <= a && 309 >= a ? b.style = "background: url('source/icons/new/moira.png') center center no-repeat;" : 310 <= a && 325 >= a ? b.style = "background: url('source/icons/new/orisa.png') center center no-repeat;" : 326 <= a && 348 >= a ? b.style = "background: url('source/icons/new/phara.png') center center no-repeat;" : 349 <= a && 369 >= a ? b.style =
-                    "background: url('source/icons/new/reaper.png') center center no-repeat;" : 370 <= a && 391 >= a ? b.style = "background: url('source/icons/new/reinhardt.png') center center no-repeat;" : 392 <= a && 409 >= a ? b.style = "background: url('source/icons/new/roadhog.png') center center no-repeat;" : 410 <= a && 423 >= a ? b.style = "background: url('source/icons/new/sigma.png') center center no-repeat;" : 424 <= a && 444 >= a ? b.style = "background: url('source/icons/new/soldier76.png') center center no-repeat;" : 445 <= a && 463 >= a ? b.style = "background: url('source/icons/new/sombra.png') center center no-repeat;" :
-                        464 <= a && 482 >= a ? b.style = "background: url('source/icons/new/symmetra.png') center center no-repeat;" : 483 <= a && 503 >= a ? b.style = "background: url('source/icons/new/torbj\u00f6rn.png') center center no-repeat;" : 504 <= a && 524 >= a ? b.style = "background: url('source/icons/new/tracer.png') center center no-repeat;" : 525 <= a && 546 >= a ? b.style = "background: url('source/icons/new/widowmaker.png') center center no-repeat;" : 547 <= a && 562 >= a ? b.style = "background: url('source/icons/new/winston.png') center center no-repeat;" : 563 <=
-                            a && 577 >= a ? b.style = "background: url('source/icons/new/wreckingball.png') center center no-repeat;" : 578 <= a && 597 >= a ? b.style = "background: url('source/icons/new/zarya.png') center center no-repeat;" : 598 <= a && 616 >= a && (b.style = "background: url('source/icons/new/zenyatta.png') center center no-repeat;")
-};
+	var c = document.getElementById('skin'),
+		b = document.getElementById('icon')
+	document.getElementById('timed')
+	var d = 1e3 * document.getElementById('usertime').value,
+		a = Math.round(Math.floor(skin.length * Math.random()))
+	c.style = skin[a]
+	1 == timed.checked ? setTimeout('changeSkin()', d) : 0 == timed.checked && clearTimeout(void 0)
+	0 <= a && 17 >= a
+		? (b.style = "background: url('source/icons/new/ana.png') center center no-repeat;")
+		: 18 <= a && 32 >= a
+			? (b.style = "background: url('source/icons/new/ashe.png') center center no-repeat;")
+			: 33 <= a && 44 >= a
+				? (b.style = "background: url('source/icons/new/baptiste.png') center center no-repeat;")
+				: 45 <= a && 64 >= a
+					? (b.style = "background: url('source/icons/new/bastion.png') center center no-repeat;")
+					: 65 <= a && 87 >= a
+						? (b.style = "background: url('source/icons/new/brigitte.png') center center no-repeat;")
+						: 88 <= a && 106 >= a
+							? (b.style = "background: url('source/icons/new/dva.png') center center no-repeat;")
+							: 107 <= a && 132 >= a
+								? (b.style = "background: url('source/icons/new/doomfist.png') center center no-repeat;")
+								: 133 <= a && 144 >= a
+									? (b.style = "background: url('source/icons/new/echo.png') center center no-repeat;")
+									: 145 <= a && 160 >= a
+										? (b.style = "background: url('source/icons/new/genji.png') center center no-repeat;")
+										: 161 <= a && 179 >= a
+											? (b.style = "background: url('source/icons/new/hanzo.png') center center no-repeat;")
+											: 181 <= a && 202 >= a
+												? (b.style = "background: url('source/icons/new/junkrat.png') center center no-repeat;")
+												: 203 <= a && 223 >= a
+													? (b.style = "background: url('source/icons/new/lucio.png') center center no-repeat;")
+													: 224 <= a && 246 >= a
+														? (b.style = "background: url('source/icons/new/mccree.png') center center no-repeat;")
+														: 247 <= a && 267 >= a
+															? (b.style = "background: url('source/icons/new/mei.png') center center no-repeat;")
+															: 268 <= a && 291 >= a
+																? (b.style =
+																		"background: url('source/icons/new/mercy.png') center center no-repeat;")
+																: 292 <= a && 309 >= a
+																	? (b.style =
+																			"background: url('source/icons/new/moira.png') center center no-repeat;")
+																	: 310 <= a && 325 >= a
+																		? (b.style =
+																				"background: url('source/icons/new/orisa.png') center center no-repeat;")
+																		: 326 <= a && 348 >= a
+																			? (b.style =
+																					"background: url('source/icons/new/phara.png') center center no-repeat;")
+																			: 349 <= a && 369 >= a
+																				? (b.style =
+																						"background: url('source/icons/new/reaper.png') center center no-repeat;")
+																				: 370 <= a && 391 >= a
+																					? (b.style =
+																							"background: url('source/icons/new/reinhardt.png') center center no-repeat;")
+																					: 392 <= a && 409 >= a
+																						? (b.style =
+																								"background: url('source/icons/new/roadhog.png') center center no-repeat;")
+																						: 410 <= a && 423 >= a
+																							? (b.style =
+																									"background: url('source/icons/new/sigma.png') center center no-repeat;")
+																							: 424 <= a && 444 >= a
+																								? (b.style =
+																										"background: url('source/icons/new/soldier76.png') center center no-repeat;")
+																								: 445 <= a && 463 >= a
+																									? (b.style =
+																											"background: url('source/icons/new/sombra.png') center center no-repeat;")
+																									: 464 <= a && 482 >= a
+																										? (b.style =
+																												"background: url('source/icons/new/symmetra.png') center center no-repeat;")
+																										: 483 <= a && 503 >= a
+																											? (b.style =
+																													"background: url('source/icons/new/torbj\u00f6rn.png') center center no-repeat;")
+																											: 504 <= a && 524 >= a
+																												? (b.style =
+																														"background: url('source/icons/new/tracer.png') center center no-repeat;")
+																												: 525 <= a && 546 >= a
+																													? (b.style =
+																															"background: url('source/icons/new/widowmaker.png') center center no-repeat;")
+																													: 547 <= a && 562 >= a
+																														? (b.style =
+																																"background: url('source/icons/new/winston.png') center center no-repeat;")
+																														: 563 <= a && 577 >= a
+																															? (b.style =
+																																	"background: url('source/icons/new/wreckingball.png') center center no-repeat;")
+																															: 578 <= a && 597 >= a
+																																? (b.style =
+																																		"background: url('source/icons/new/zarya.png') center center no-repeat;")
+																																: 598 <= a &&
+																																	616 >= a &&
+																																	(b.style =
+																																		"background: url('source/icons/new/zenyatta.png') center center no-repeat;")
+}
