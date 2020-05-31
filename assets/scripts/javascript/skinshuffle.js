@@ -604,11 +604,20 @@ function changeSkin() {
 	// change skins
 	var preview = document.getElementById('skin')
 	var icon = document.getElementById('icon')
+	var checkbox = document.getElementById('timed')
+	var changeTime = document.getElementById('usertime').value * 1000
 	var s = skin.length
 	var x = Math.floor(s * Math.random())
 	var r = Math.round(x)
 
 	preview.style = skin[r]
+
+	var count
+	if (timed.checked == true) {
+		count = setTimeout('changeSkin()', changeTime)
+	} else if (timed.checked == false) {
+		clearTimeout(count)
+	}
 
 	if (r >= 0 && r <= 17) {
 		icon.style = "background: url('source/icons/new/ana.png') center center no-repeat;"
