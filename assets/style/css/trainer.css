@@ -15,7 +15,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	cursor: url('../cursor/26_e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
+	cursor: url('../cursor/26_2_e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
 }
 
 body {
@@ -131,13 +131,14 @@ body {
 	border: 2px solid transparent;
 	font-size: 26px;
 	opacity: 0.8;
+	margin-bottom: 15px;
 }
 
 .overwatch:hover {
 	background-color: rgb(233, 156, 14);
 	opacity: 1;
 	border-color: rgb(185, 121, 0);
-	cursor: url('../cursor/e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
+	cursor: url('../cursor/26_2_e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
 }
 
 .overwatch:focus {
