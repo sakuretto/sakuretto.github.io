@@ -1,146 +1,160 @@
 @font-face {
-	font-family: "Big Noodle";
-	src: url('../../style/fonts/BigNoodleToo.ttf');
+    font-family: "Big Noodle";
+    src: url('../../style/fonts/BigNoodleToo.ttf');
 }
+
 @font-face {
-	font-family: "Big Noodle Italic";
-	src: url('../../style/fonts/BigNoodleTooOblique.ttf');
+    font-family: "Big Noodle Italic";
+    src: url('../../style/fonts/BigNoodleTooOblique.ttf');
 }
+
 @font-face {
-	font-family: "Futura";
-	src: url('../../style/fonts/Futura.ttf');
+    font-family: "Futura";
+    src: url('../../style/fonts/Futura.ttf');
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	cursor: url('../cursor/26_2_e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('../cursor/26_2_e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
 }
 
 body {
-	background: url('../../img/background/lucio.jpg') center center no-repeat;
-	background-size: cover;
-	min-height: 100vh;
+    background: url('../../img/background/lucio.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .overlay {
-	width: 100%;
-	height: 100vh;
-	background: rgba(0, 0, 0, 0.7);
-	position: absolute;
-	z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 1;
 }
 
 .header {
-	width: 100%;
-	height: 50px;
-	display: flex !important;
-	align-items: center;
-	z-index: 90;
-	color: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex !important;
+    align-items: center;
+    z-index: 90;
+    color: #fff;
 }
 
 .title {
-	font-family: "Big Noodle Italic";
-	font-size: 80px;
-	color: #fff;
-	z-index: 90;
-	text-shadow: 1px 1px 0px #007fff, 2px 2px 0px #007fff, 3px 3px 0px #007fff, 4px 4px 0px #007fff, 5px 5px 0px #007fff,
-		6px 6px 0px #007fff, 7px 7px 0px #007fff;
+    font-family: "Big Noodle Italic";
+    font-size: 80px;
+    color: #fff;
+    z-index: 90;
+    text-shadow: 1px 1px 0px #007fff, 2px 2px 0px #007fff, 3px 3px 0px #007fff, 4px 4px 0px #007fff, 5px 5px 0px #007fff,
+        6px 6px 0px #007fff, 7px 7px 0px #007fff;
 }
 
 .drag-bottom {
-	position: absolute;
-	bottom: 30px;
-	z-index: 90;
+    position: absolute;
+    bottom: 30px;
+    z-index: 90;
 }
 
 .center {
-	left: 50%;
-	transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.header > .container {
-	display: flex !important;
-	justify-content: space-between;
-	z-index: 10;
+.header>.container {
+    display: flex !important;
+    justify-content: space-between;
+    z-index: 10;
 }
 
 #app {
-	position: absolute;
-	width: 100%;
-	height: calc(100vh - 150px - 50px);
-	z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 150px - 50px);
+    z-index: 10;
 }
 
 #skin {
-	position: absolute;
-	width: 700px;
-	height: calc(100vh - 350px - 50px);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-attachment: fixed;
-	background-size: contain;
-	background: url('https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg')
-		center center no-repeat;
+    position: absolute;
+    width: 700px;
+    height: calc(100vh - 350px - 50px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-attachment: fixed;
+    background-size: contain;
+    background: url('https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg') center center no-repeat;
 }
 
 #icon {
-	position: absolute;
-	top: 50%;
-	right: 10%;
-	transform: translateY(-50%);
-	width: 128px;
-	height: 128px;
-	background-size: contain;
-	z-index: 90;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 128px;
+    height: 128px;
+    background-size: contain;
+    z-index: 90;
 }
 
 .bot {
-	display: flex;
-	flex-direction: row;
-	position: absolute;
-	bottom: 0;
-	background: transparent;
-	width: 100%;
-	height: 150px;
-	justify-content: space-evenly;
-	align-items: center;
-	z-index: 10;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    width: 100%;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
 }
 
 .controls {
-	position: absolute;
-	z-index: 90;
-	transform: translateY(-50%);
-	top: 50%;
-	left: 5%;
-	color: white;
+    position: absolute;
+    z-index: 90;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 5%;
+    color: white;
 }
 
 .overwatch {
-	padding: 0.5rem 1rem;
-	border: 0;
-	background-color: rgb(233, 156, 14);
-	font-family: "Futura", sans-serif;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	border: 2px solid transparent;
-	font-size: 26px;
-	opacity: 0.8;
-	margin-bottom: 15px;
+    padding: 0.5rem 1rem;
+    border: 0;
+    background-color: rgb(233, 156, 14);
+    font-family: "Futura", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid transparent;
+    font-size: 26px;
+    opacity: 0.8;
+    margin-bottom: 15px;
 }
 
 .overwatch:hover {
-	background-color: rgb(233, 156, 14);
-	opacity: 1;
-	border-color: rgb(185, 121, 0);
-	cursor: url('../cursor/26_2_e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
+    background-color: rgb(233, 156, 14);
+    opacity: 1;
+    border-color: rgb(185, 121, 0);
+    cursor: url('../cursor/26_2_e05dbb26-d8a6-493b-8f4b-a28042dc6d7e.png'), auto;
 }
 
 .overwatch:focus {
-	outline: none;
+    outline: none;
+}
+
+.fa-github {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 23pt;
+    text-align: center;
+    transition: 150ms ease-out all;
+}
+
+.fa-github:hover {
+    color: #007fff;
+    transition: 150ms ease-out all;
 }
